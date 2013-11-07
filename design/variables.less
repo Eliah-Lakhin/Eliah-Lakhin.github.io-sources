@@ -18,22 +18,22 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #428bca;
+@brand-primary:         #f7941d;
 @brand-success:         #5cb85c;
-@brand-warning:         #f0ad4e;
+@brand-warning:         #428bca;
 @brand-danger:          #d9534f;
 @brand-info:            #5bc0de;
 
 // Scaffolding
 // -------------------------
 
-@body-bg:               #fff;
+@body-bg:               #fffbef;
 @text-color:            @gray-dark;
 
 // Links
 // -------------------------
 
-@link-color:            @brand-primary;
+@link-color:            darken(@brand-primary, 20%);
 @link-hover-color:      darken(@link-color, 15%);
 
 // Typography
@@ -254,7 +254,7 @@
 // -------------------------
 
 // Basics of a navbar
-@navbar-height:                    50px;
+@navbar-height:                    80px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
@@ -262,7 +262,7 @@
 
 @navbar-default-color:             #777;
 @navbar-default-bg:                #f8f8f8;
-@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-border:            darken(@navbar-default-bg, 10%);
 
 // Navbar links
 @navbar-default-link-color:                #777;
@@ -287,13 +287,13 @@
 // Inverted navbar
 //
 // Reset inverted navbar basics
-@navbar-inverse-color:                      @gray-light;
-@navbar-inverse-bg:                         #222;
+@navbar-inverse-color:                      #fff;
+@navbar-inverse-bg:                         #433e3a;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 @gray-light;
-@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-color:                 #fff;
+@navbar-inverse-link-hover-color:           @brand-primary;
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
 @navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
@@ -302,7 +302,7 @@
 
 // Inverted navbar brand label
 @navbar-inverse-brand-color:                @navbar-inverse-link-color;
-@navbar-inverse-brand-hover-color:          #fff;
+@navbar-inverse-brand-hover-color:          @brand-warning;
 @navbar-inverse-brand-hover-bg:             transparent;
 
 // Inverted navbar toggle
@@ -544,7 +544,7 @@
 
 // Wells
 // -------------------------
-@well-bg:                     #f5f5f5;
+@well-bg:                     @gray-light;
 
 
 // Badges
@@ -597,9 +597,9 @@
 @code-color:                  #c7254e;
 @code-bg:                     #f9f2f4;
 
-@pre-bg:                      #f5f5f5;
-@pre-color:                   @gray-dark;
-@pre-border-color:            #ccc;
+@pre-bg:                      @gray-darker;
+@pre-color:                   #fff;
+@pre-border-color:            @brand-primary;
 @pre-scrollable-max-height:   340px;
 
 // Type

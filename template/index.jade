@@ -3,10 +3,13 @@ html(lang="en")
     head
         include include/header
     body
-        .container
+        include include/menu
 
+        .container
             .row
-                .col-md-6
-                    .page-header
-                        h1= index.header
-                        .lead=index.lead
+                .col-md-offset-1.col-md-10.main-container
+                    .row
+                        .col-xs-8
+                            include ../article/intro.md
+                        .col-xs-4.dark-theme#personal
+                            include include/profile

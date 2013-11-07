@@ -1,0 +1,15 @@
+img(src="/asset/my-photo3.jpg")
+pre: code
+    each section, caption in profile
+        span.section-name= caption
+        != '\n'
+        each entry in section
+            != '  '
+            if (entry.key)
+                span.entry-key= entry.key + ': '
+            if (entry.link)
+                a(href= entry.link, target= "_blank")= entry.value
+            else
+                != entry.value
+            != '\n'
+        != '\n'

@@ -1,7 +1,62 @@
 {
     "index": {
-        "title": "Ilya Lakhin",
-        "header": "Ilya Lakhin's web site",
-        "lead": "Software development as an art"
+        "title": "Ilya Lakhin"
+    },
+    "menu": {
+        "home": "Home",
+        "brand": "Ilya Lakhin's home website",
+        "about": "About",
+        "toggle": "Toggle navigation",
+        "github": "GitHub",
+        "blog": "Blog",
+        "projects": "Projects"
+    },
+    "profile": {
+        "Profile": [
+            {
+                "value": "Ilya Lakhin"
+            },
+            {
+                "value": "Software developer"
+            },
+            {
+                "key": "Location",
+                "value": "Novosibirsk, Russia",
+                "link": "http://en.wikipedia.org/wiki/Akademgorodok"
+            },
+            {
+                "key": "Alma mater",
+                "value": "NSU",
+                "link": "http://en.wikipedia.org/wiki/Novosibirsk_State_University"
+            }
+        ],
+        "Network": [
+            {
+                "key": "GitHub",
+                "value": "Eliah-Lakhin",
+                "link": "https://github.com/Eliah-Lakhin"
+            },
+            {
+                "key": "oDesk",
+                "value": "Remote contractor",
+                "link": "https://www.odesk.com/users/~01dbf2ebf18c175658"
+            },
+            {
+                "key": "Twitter",
+                "value": "eliah_lakhin",
+                "link": "https://twitter.com/eliah_lakhin"
+            }
+        ],
+        "Contacts": [
+            {
+                "key": "Email",
+                "value": "eliah.lakhin [at] gmail.com",
+                "link": "mailto:eliah.lakhin@gmail.com"
+            },
+            {
+                "key": "Skype",
+                "value": "eliah.lakhin"
+            }
+        ]
     }
 }

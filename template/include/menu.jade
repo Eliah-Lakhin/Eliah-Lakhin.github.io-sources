@@ -1,0 +1,24 @@
+nav.navbar.navbar-default.navbar-custom.navbar-fixed-top.navbar-inverse(role="navigation")
+    .container
+        .navbar-header
+            button.navbar-toggle(type="button",
+                                 data-toggle="collapse",
+                                 data-target="#main-menu-body")
+                span.sr-only menu.toggle
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+
+            a.navbar-brand(href="/", title=menu.home)= menu.brand
+
+        .collapse.navbar-collapse#main-menu-body
+            ul.nav.navbar-nav.navbar-right
+                li.active
+                    .triangle
+                    a(href="/")= menu.about
+                li
+                    a(href="/blog")= menu.blog
+                li
+                    a(href="/projects")= menu.projects
+                li
+                    a(href="https://github.com/Eliah-Lakhin/")= menu.github

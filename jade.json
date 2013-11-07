@@ -55,7 +55,8 @@
             },
             {
                 "key": "Skype",
-                "value": "eliah.lakhin"
+                "value": "eliah.lakhin",
+                "link": "skype:eliah.lakhin"
             }
         ]
     }

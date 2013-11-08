@@ -2,13 +2,70 @@ doctype 5
 html(lang="en")
     head
         include ../include/header
+        script(type="text/javascript",
+               src="/js/clamped-width.js")
         include ../include/analytics.txt
-    body
+    body(data-spy="scroll", data-target="#main-nav")
         include ../include/menu
+        include ../include/mixins
 
-        .container
+        .container.main-container
             .row
-                .col-md-offset-1.col-md-10.main-container
-                    .row
-                        .col-xs-12
-                            include ../../../projects/papa-carlo/Tutorial-1:-Parser-structure.md
+                .col-md-3(role="complementary")
+                    #main-nav.dark-theme(data-spy="affix",
+                                         data-clampedwidth='[role="complementary"]')
+                        .ul.nav.nav-pills.nav-stacked.nav-top
+                            +navigation-item("Source codes on GitHub", "https://github.com/Eliah-Lakhin/papa-carlo/")
+                            +navigation-item("Introduction")
+                            li
+                                span Tutorial
+                                ul.nav
+                                    +navigation-item("Parser structure")
+                                    +navigation-item("Parsing stages")
+                                    +navigation-item("Lexis")
+                                    +navigation-item("Fragments definition")
+                                    +navigation-item("Abstract Syntax Tree")
+                                    +navigation-item("Syntax definition API")
+                                    +navigation-item("Error recovering")
+                                    +navigation-item("Caching")
+                                    +navigation-item("Expressions")
+                                    +navigation-item("Manual AST manipulation")
+                                    +navigation-item("Debugging")
+
+                .col-md-9.light-theme(role="main")
+
+                    +article("Introduction")
+                        include ../../../projects/papa-carlo/What-is-it-about.md
+
+                    +article("Parser structure")
+                        include ../../../projects/papa-carlo/Tutorial-1:-Parser-structure.md
+
+                    +article("Parsing stages")
+                        include ../../../projects/papa-carlo/Tutorial-2:-Parsing-stages.md
+
+                    +article("Lexis")
+                        include ../../../projects/papa-carlo/Tutorial-3:-Lexis.md
+
+                    +article("Fragments definition")
+                        include ../../../projects/papa-carlo/Tutorial-4:-Fragments-definition.md
+
+                    +article("Abstract Syntax Tree")
+                        include ../../../projects/papa-carlo/Tutorial-5:-Abstract-Syntax-Tree.md
+
+                    +article("Syntax definition API")
+                        include ../../../projects/papa-carlo/Tutorial-6.1:-Syntax-definition-API.md
+
+                    +article("Error recovering")
+                        include ../../../projects/papa-carlo/Tutorial-6.2:-Error-recovering.md
+
+                    +article("Caching")
+                        include ../../../projects/papa-carlo/Tutorial-6.3:-Caching.md
+
+                    +article("Expressions")
+                        include ../../../projects/papa-carlo/Tutorial-6.4:-Expressions.md
+
+                    +article("Manual AST manipulation")
+                        include ../../../projects/papa-carlo/Tutorial-7:-Manual-AST-manipulation.md
+
+                    +article("Debugging")
+                        include ../../../projects/papa-carlo/Tutorial-8:-Debugging.md

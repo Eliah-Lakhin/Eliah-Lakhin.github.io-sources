@@ -3,7 +3,7 @@ mixin item(title, link, active)
         .triangle
         a(href= link)= title
 
-nav.navbar.navbar-default.navbar-custom.navbar-fixed-top.navbar-inverse(role="navigation")
+header.navbar.navbar-default.navbar-custom.navbar-fixed-top.navbar-inverse(role="navigation")
     .container
         .navbar-header
             button.navbar-toggle(type="button",
@@ -14,11 +14,16 @@ nav.navbar.navbar-default.navbar-custom.navbar-fixed-top.navbar-inverse(role="na
                 span.icon-bar
                 span.icon-bar
 
-            a.navbar-brand(href="/", title=menu.home)= page.brand
+            a.navbar-brand(href=page.brand.url, title=page.brand.hint)
+                if (page.brand.sub)
+                    span.navbar-brand-main= page.brand.main
+                    span.navbar-brand-sub= page.brand.sub
+                else
+                    != page.brand.main
 
         .collapse.navbar-collapse#main-menu-body
             ul.nav.navbar-nav.navbar-right
-                mixin item(menu.about, "/", page.menu == "index")
+                mixin item(menu.home, "/", page.menu == "home")
                 mixin item(menu.blog, "/blog", page.menu == "blog")
                 mixin item(menu.projects, "/projects", page.menu == "projects")
                 mixin item(menu.github, "https://github.com/Eliah-Lakhin/")

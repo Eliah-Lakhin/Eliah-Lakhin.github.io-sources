@@ -1,18 +1,21 @@
 {
     "menu": {
         "home": "Home",
-        "about": "About",
-        "toggle": "Toggle navigation",
         "github": "GitHub",
         "blog": "Blog",
-        "projects": "Projects"
+        "projects": "Projects",
+        "toggle": "Toggle navigation"
     },
 
     "pages": {
         "index": {
-            "menu": "index",
+            "menu": "home",
             "title": "Ilya Lakhin",
-            "brand": "Ilya Lakhin's home website",
+            "brand": {
+                "main": "Ilya Lakhin's home website",
+                "url": "/",
+                "hint": "Home"
+            },
             "profile": {
                 "Profile": [
                     {
@@ -67,13 +70,22 @@
         "projects": {
             "menu": "projects",
             "title": "Ilya Lakhin's projects",
-            "brand": "Project list"
+            "brand": {
+                "main": "Project list",
+                "url": "/projects/",
+                "hint": "Home"
+            }
         },
 
         "project-papa-carlo": {
             "menu": "projects",
             "title": "Papa Carlo",
-            "brand": "Papa Carlo - constructor of incremental parsers in Scala"
+            "brand": {
+                "main": "Papa Carlo",
+                "sub": "constructor of incremental parsers in Scala",
+                "url": "/projects/papa-carlo",
+                "hint": "Home"
+            }
         }
     }
 }

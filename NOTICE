@@ -1,8 +1,11 @@
-1. asset/file000624709884.jpg
+1. other/asset/file000624709884.jpg
 Derived from: http://www.morguefile.com/archive/display/123373
 License: http://www.morguefile.com/license/full
 
 2. design/*
 Derived from: https://github.com/twbs/bootstrap
 License: APL2 & MIT
+
+3. other/asset/GitHub-Mark-32px.png
+Siource: https://github.com/logos
 

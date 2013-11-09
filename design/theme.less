@@ -172,8 +172,9 @@ body {
   }
 
   #main-nav {
+
     .nav.nav-top {
-      margin: 15px 20px;
+      margin: 15px 0 15px 20px;
     }
 
     .nav {
@@ -188,6 +189,7 @@ body {
 
         > a {
           border: 0;
+          border-radius: 0;
           text-decoration: none;
 
           span {
@@ -214,6 +216,7 @@ body {
           &:focus {
             color: @brand-primary;
             background-color: inherit;
+            border-right: 3px solid @brand-primary;
 
             span {
               border: none;
@@ -299,6 +302,23 @@ body {
 
       code {
         border: 1px solid @gray-lighter;
+      }
+    }
+
+    ul {
+      list-style: square;
+    }
+
+    .btn {
+      min-width: 100%;
+      color: @gray-darker;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 0;
+
+      img {
+        margin: 0 10px;
       }
     }
   }

@@ -82,7 +82,8 @@
                 "main": "Papa Carlo",
                 "sub": "constructor of incremental parsers in Scala",
                 "url": "/projects/papa-carlo"
-            }
+            },
+            "forkMe": "View on GitHub"
         }
     }
 }

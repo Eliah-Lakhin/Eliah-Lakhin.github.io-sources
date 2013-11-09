@@ -9,8 +9,8 @@ mixin article(title, id)
         block
 
 mixin navigation-item(title, ref)
-    if !!ref
+    if !!ref && ref[0] != '#'
         li: a.external(href= ref, target= "_blank"): span= title
     else
-        li: a(href= "#" + functions.titleToId(title))
+        li: a(href= ref ? ref : "#" + functions.titleToId(title))
             span= title

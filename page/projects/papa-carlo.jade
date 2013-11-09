@@ -2,20 +2,21 @@ doctype 5
 html(lang="en")
     head
         include ../include/header
-        script(type="text/javascript",
-               src="/js/clamped-width.js")
+        script(type="text/javascript", src="/js/clamped-width.js")
+        include ../include/google-api.txt
         include ../include/analytics.txt
     body(data-spy="scroll", data-target="#main-nav")
+        include ../include/facebook-api.txt
         include ../include/menu
         include ../include/mixins
 
         .container.main-container
             .row
-                .col-md-3(role="complementary")
+                .col-md-3(role="complementary").visible-md.visible-lg
                     #main-nav.dark-theme(data-spy="affix",
                                          data-clampedwidth='[role="complementary"]')
                         .ul.nav.nav-pills.nav-stacked.nav-top
-                            +navigation-item("Source codes on GitHub", "https://github.com/Eliah-Lakhin/papa-carlo/")
+                            +navigation-item("About", "#papa-carlo")
                             +navigation-item("Introduction")
                             li
                                 span Tutorial
@@ -31,8 +32,15 @@ html(lang="en")
                                     +navigation-item("Expressions")
                                     +navigation-item("Manual AST manipulation")
                                     +navigation-item("Debugging")
+                            +navigation-item("Source codes on GitHub", "https://github.com/Eliah-Lakhin/papa-carlo/")
 
                 .col-md-9.light-theme(role="main")
+
+                    +article("Papa Carlo")
+                        .row
+                            .col-xs-12
+                                include ../../article/papa-carlo/about.md
+                        include ../include/social/papa-carlo
 
                     +article("Introduction")
                         include ../../../projects/papa-carlo/What-is-it-about.md

@@ -1,0 +1,16 @@
+each entry in page.entries
+    .entry
+        .row
+            .col-xs-10
+                h3
+                    if entry.post
+                        a(href="/blog/" + entry.post + "/")= entry.title
+                    else
+                        != entry.title
+            .col-xs-2
+                span.date= entry.date
+        .references
+            span= page.references
+            ul
+                each ref, caption in entry.url
+                    li: a(href= ref)= caption

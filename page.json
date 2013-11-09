@@ -84,6 +84,32 @@
                 "url": "/projects/papa-carlo"
             },
             "forkMe": "View on GitHub"
+        },
+
+        "blog": {
+            "menu": "blog",
+            "title": "Ilya Lakhin's blog",
+            "brand": {
+                "main": "My web logs",
+                "url": "/blog/"
+            },
+            "references": "References",
+            "entries": [
+                {
+                    "title": "Remote job - is not a freelance",
+                    "date": "28.10.2013",
+                    "url": {
+                        "On Habrahabr in Russian": "http://habrahabr.ru/post/199114/"
+                    }
+                },
+                {
+                    "title": "Functional programming in Java",
+                    "date": "28.06.2011",
+                    "url": {
+                        "On Habrahabr in Russian": "http://habrahabr.ru/post/122919/"
+                    }
+                }
+            ]
         }
     }
 }

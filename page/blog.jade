@@ -1,0 +1,15 @@
+doctype 5
+html(lang="en")
+    head
+        include include/header
+        include include/analytics.txt
+    body
+        include include/menu
+        include include/mixins
+
+        .container.main-container
+            .row
+                .col-md-offset-1.col-md-10.light-theme#blog
+                    +article("Web logs")
+                        include ../article/blog.md
+                        p: include include/blog-list

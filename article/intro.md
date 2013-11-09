@@ -1,5 +1,3 @@
-###Hi and welcome to my home website!
-
 My name is Ilya Lakhin, and I am independent software developer from Russia.
 
 I had been working as a web developer for various IT companies and start-ups

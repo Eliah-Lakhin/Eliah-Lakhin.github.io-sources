@@ -12,8 +12,9 @@ html(lang="en")
 
         .container.main-container
             .row
-                .col-md-3(role="complementary").visible-md.visible-lg
+                .col-md-3(role="complementary")
                     #main-nav.dark-theme(data-spy="affix",
+                                         data-offset-top="106",
                                          data-clampedwidth='[role="complementary"]')
                         .ul.nav.nav-pills.nav-stacked.nav-top
                             +navigation-item("About", "#papa-carlo")
@@ -39,7 +40,7 @@ html(lang="en")
                     +article("Papa Carlo")
                         .row
                             .col-xs-12
-                                include ../../article/papa-carlo/about.md
+                                include ../../article/about-papa-carlo.md
                         include ../include/social/papa-carlo
 
                     +article("Introduction")

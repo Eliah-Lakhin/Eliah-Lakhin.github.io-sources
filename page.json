@@ -12,7 +12,7 @@
             "menu": "home",
             "title": "Ilya Lakhin",
             "brand": {
-                "main": "Ilya Lakhin's home website",
+                "main": "Ilya Lakhin",
                 "url": "/"
             },
             "profile": {
@@ -54,7 +54,7 @@
                 "Contacts": [
                     {
                         "key": "Email",
-                        "value": "eliah.lakhin [at] gmail.com",
+                        "value": "eliah.lakhin@gmail.com",
                         "link": "mailto:eliah.lakhin@gmail.com"
                     },
                     {
@@ -98,18 +98,24 @@
                 {
                     "title": "Remote job - is not a freelance",
                     "date": "28.10.2013",
-                    "url": {
+                    "refs": {
                         "On Habrahabr in Russian": "http://habrahabr.ru/post/199114/"
                     }
                 },
                 {
                     "title": "Functional programming in Java",
                     "date": "28.06.2011",
-                    "url": {
+                    "refs": {
                         "On Habrahabr in Russian": "http://habrahabr.ru/post/122919/"
                     }
                 }
-            ]
+            ],
+            "posts": {
+                "10.11.2013": {
+                    "title": "How to improve modern code editors",
+                    "article": "how-to-improve-modern-code-editors.md"
+                }
+            }
         }
     }
 }

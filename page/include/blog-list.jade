@@ -9,8 +9,9 @@ each entry in page.entries
                         != entry.title
             .col-xs-2
                 span.date= entry.date
-        .references
-            span= page.references
-            ul
-                each ref, caption in entry.url
-                    li: a(href= ref)= caption
+        if entry.refs
+            .references
+                span= page.references + ":"
+                ul
+                    each ref, caption in entry.refs
+                        li: a(href= ref)= caption

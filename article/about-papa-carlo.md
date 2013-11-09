@@ -10,7 +10,7 @@ Key features:
    changes end user makes to the source code. Even if the source code consists
    of thousands lines.
  * **Automatic AST construction**. No rule action needed to construct Abstract
-   Syntax Tree that represents source code's structure. Parser build AST out of
+   Syntax Tree that represents source code's structure. Parser builds AST out of
    the box.
  * **Error-recovery mechanism**. The parser can recognise source code even if
    the code contains syntactical errors.

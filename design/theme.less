@@ -10,7 +10,6 @@
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro);
 
 @menu-top-border: 5px;
-@menu-margin: 50px;
 @menu-font-family: @font-family-sans-serif;
 @menu-font-size: 13px;
 @triangle-size: 7px;
@@ -19,15 +18,22 @@
 @brand-font-size: 28px;
 @brand-main-font-size: 32px;
 @code-underline-color: darken(@pre-color, 75%);
-@body-top-offset: @navbar-height + @menu-margin;
+@article-header-line-color: lighten(@navbar-inverse-bg, 25%);
 
 body {
-  padding-top: @body-top-offset;
   background: url('/asset/file000624709884.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.affix-top {
+  margin-bottom: 20px;
+}
+
+.affix {
+  top: 10px;
 }
 
 .navbar-custom {
@@ -103,6 +109,10 @@ body {
     font-family: @main-container-font-family;
   }
 
+  .light-theme, .dark-theme {
+    padding-bottom: 1px;
+  }
+
   .light-theme {
     background-color: @body-bg;
     color: @text-color;
@@ -174,7 +184,8 @@ body {
   #main-nav {
 
     .nav.nav-top {
-      margin: 15px 0 15px 20px;
+      margin: 0;
+      padding: 15px 0 15px 20px;
     }
 
     .nav {
@@ -235,13 +246,13 @@ body {
       display: block;
       text-align: center;
 
-      margin: -@body-top-offset 0 40px 0;
-      padding-top: @body-top-offset + 40px;
+      margin: 0 0 40px 0;
+      padding-top: 40px;
 
       .decoration-line {
         position: relative;
         height: 1px;
-        background: lighten(@navbar-inverse-bg, 25%);
+        background: @article-header-line-color;
         margin-left: 12.5%;
         margin-right: 12.5%;
         top: @font-size-h1 / 2 + 3px;
@@ -322,23 +333,23 @@ body {
       }
     }
   }
+}
 
-  #blog {
-    article {
-      h2, h3, h4, h5, h6 {
-        text-align: left;
-      }
+#blog {
+  article {
+    h2, h3, h4, h5, h6 {
+      text-align: left;
+    }
 
-      .entry {
-        border-bottom: 1px solid @gray-light;
-        padding-bottom: 20px;
-        margin: 0 20px 20px 20px;
+    .entry {
+      border-bottom: 1px solid @article-header-line-color;
+      padding-bottom: 20px;
+      margin: 0 20px 20px 20px;
 
-        .date {
-          display: inline-block;
-          padding-top: 25px;
-          text-align: right;
-        }
+      .date {
+        display: inline-block;
+        padding-top: 25px;
+        text-align: right;
       }
     }
   }
@@ -346,19 +357,69 @@ body {
 
 #personal {
   position: relative;
-  left: 1px;
+  padding: 12px 10px 2px 10px;
 
   img {
     text-align: center;
     display: block;
-    margin: 10px auto 10px auto;
-    width:100%;
-    height:100%;
+    margin: 0 auto 10px auto;
+    width: 100%;
+    height: 100%;
   }
+
   .section-name {
     color: @gray-light
   }
+
   .entry-key {
     color: darken(@brand-primary, 0%)
+  }
+
+  img, pre {
+    max-width: 297px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: @screen-md) {
+  .affix, .affix-top {
+    display: none;
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  .main-container {
+    article {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  #personal {
+    img {
+      display: none;
+    }
+
+    pre {
+      margin-left: inherit;
+      margin-right: inherit;
+      max-width: 1024px;
+    }
+  }
+}
+
+@media (max-width: @screen-sm) {
+  body {
+    background-color: @body-bg;
+    background-image: none;
+  }
+
+  .navbar.navbar-custom {
+    margin-bottom: 0;
+  }
+
+  .main-container {
+    margin-bottom: 0;
   }
 }

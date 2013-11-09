@@ -13,8 +13,7 @@
             "title": "Ilya Lakhin",
             "brand": {
                 "main": "Ilya Lakhin's home website",
-                "url": "/",
-                "hint": "Home"
+                "url": "/"
             },
             "profile": {
                 "Profile": [
@@ -69,11 +68,10 @@
 
         "projects": {
             "menu": "projects",
-            "title": "Ilya Lakhin's projects",
+            "title": "Ilya Lakhin's works",
             "brand": {
-                "main": "Project list",
-                "url": "/projects/",
-                "hint": "Home"
+                "main": "The list of my works",
+                "url": "/projects/"
             }
         },
 
@@ -83,8 +81,7 @@
             "brand": {
                 "main": "Papa Carlo",
                 "sub": "constructor of incremental parsers in Scala",
-                "url": "/projects/papa-carlo",
-                "hint": "Home"
+                "url": "/projects/papa-carlo"
             }
         }
     }

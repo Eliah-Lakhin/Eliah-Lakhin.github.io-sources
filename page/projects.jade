@@ -5,8 +5,10 @@ html(lang="en")
         include include/analytics.txt
     body
         include include/menu
+        include include/mixins
 
         .container.main-container
             .row
                 .col-md-offset-1.col-md-10.light-theme
-                    include ../article/works.md
+                    +article("Development plan")
+                        include ../article/works.md

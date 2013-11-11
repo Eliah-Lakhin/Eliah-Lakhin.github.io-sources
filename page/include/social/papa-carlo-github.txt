@@ -1,2 +1,0 @@
-<iframe src="http://ghbtns.com/github-btn.html?user=Eliah-Lakhin&repo=papa-carlo&type=watch&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="85" height="20"></iframe>

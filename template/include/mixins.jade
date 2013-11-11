@@ -1,0 +1,57 @@
+mixin section-header(title, id)
+    h1.section-header(id = id ? id : functions.titleToId(title))
+        .decoration-line
+        span.caption= title
+
+mixin article(title, id)
+    article
+        +section-header(title, id)
+        block
+
+mixin navigation-item(title, ref)
+    if !!ref && ref[0] != '#'
+        li: a.external(href= ref, target= "_blank"): span= title
+    else
+        li: a(href= ref ? ref : "#" + functions.titleToId(title))
+            span= title
+
+mixin github(repo)
+    iframe(src!="http://ghbtns.com/github-btn.html?user=Eliah-Lakhin&repo=" + repo + "&type=watch&count=true",
+           allowtransparency="true",
+           frameborder="0",
+           scrolling="0",
+           width="85",
+           height="20")
+
+mixin facebook(url)
+    .fb-like(data-href=url,
+             data-action="like",
+             data-layout="button_count",
+             data-show-faces="true",
+             data-share="false")
+
+mixin twitter(url, text)
+    a.twitter-share-button(href="https://twitter.com/share",
+                           data-url=url,
+                           data-text=text,
+                           data-via="eliah_lakhin") Tweet
+    script !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+mixin google(url)
+    .g-plusone(data-size="medium",
+               data-annotation="inline",
+               data-width="120",
+               data-href=url)
+
+mixin social(url, text, repo)
+    hr
+    .row
+        if repo
+            .col-sm-2
+                +github(repo)
+        .col-sm-2
+            +facebook(url)
+        .col-sm-2
+            +twitter(url, text)
+        .col-sm-2
+            +google(url)

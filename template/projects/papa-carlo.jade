@@ -3,10 +3,10 @@ html(lang="en")
     head
         include ../include/header
         script(type="text/javascript", src="/js/clamped-width.js")
-        include ../include/google-api.txt
-        include ../include/analytics.txt
+        include ../include/google-api.jade
+        include ../include/analytics.jade
     body(data-spy="scroll", data-target="#main-nav")
-        include ../include/facebook-api.txt
+        include ../include/facebook-api.jade
         include ../include/menu
         include ../include/mixins
 
@@ -40,8 +40,10 @@ html(lang="en")
                     +article("Papa Carlo")
                         .row
                             .col-xs-12
-                                include ../../article/about-papa-carlo.md
-                        include ../include/social/papa-carlo
+                                include ../../content/about-papa-carlo.md
+                        +social("http://lakhin.com/projects/papa-carlo/",
+                                "Incremental PEG parser in Scala",
+                                "papa-carlo")
 
                     +article("Introduction")
                         include ../../../projects/papa-carlo/What-is-it-about.md

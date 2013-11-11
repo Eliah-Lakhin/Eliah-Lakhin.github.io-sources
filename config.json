@@ -66,6 +66,16 @@
             }
         },
 
+        "page404": {
+            "menu": "",
+            "title": "Ilya Lakhin",
+            "brand": {
+                "main": "Ilya Lakhin",
+                "url": "/"
+            },
+            "caption": "I tried weally hard to find it :("
+        },
+
         "projects": {
             "menu": "projects",
             "title": "Ilya Lakhin's works",

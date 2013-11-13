@@ -73,7 +73,7 @@
                 "main": "Ilya Lakhin",
                 "url": "/"
             },
-            "caption": "I tried weally hard to find it :("
+            "caption": "I tried weally hard to find it ^_^"
         },
 
         "projects": {
@@ -91,7 +91,7 @@
             "brand": {
                 "main": "Papa Carlo",
                 "sub": "constructor of incremental parsers in Scala",
-                "url": "/projects/papa-carlo"
+                "url": "/projects/papa-carlo/"
             },
             "forkMe": "View on GitHub"
         },
@@ -122,8 +122,8 @@
             ],
             "posts": {
                 "10.11.2013": {
-                    "title": "How to improve modern code editors",
-                    "article": "how-to-improve-modern-code-editors.md"
+                    "title": "What wrong with code editors",
+                    "article": "11.11.2013-what-wrong-with-code-editors.md"
                 }
             }
         }

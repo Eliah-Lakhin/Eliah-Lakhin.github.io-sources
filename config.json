@@ -134,6 +134,7 @@
                 "url": "/blog/"
             },
             "references": "External references",
+            "details": "Details",
             "description": "Ilya Lakhin's web logs.",
             "lastUpdate": "28.10.2013",
             "posts": [
@@ -141,7 +142,7 @@
                     "title": "Remote job - is not a freelance",
                     "date": "26.10.2013",
                     "refs": {
-                        "On Habrahabr in Russian":
+                        "Article on Habrahabr in Russian":
                             "http://habrahabr.ru/post/199114/"
                     }
                 },
@@ -149,7 +150,7 @@
                     "title": "Functional programming in Java",
                     "date": "28.06.2011",
                     "refs": {
-                        "On Habrahabr in Russian":
+                        "Article on Habrahabr in Russian":
                             "http://habrahabr.ru/post/122919/"
                     }
                 }

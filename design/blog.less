@@ -1,22 +1,70 @@
 @import "variables";
 @import "bootstrap/mixins";
 
+@primary-link-color: darken(@brand-primary, 10%);
+
 #blog {
-  article {
-    h2, h3, h4, h5, h6 {
-      text-align: left;
+  .entry {
+    padding: 0 20px 0px 20px;
+    margin: 0 20px 10px 20px;
+
+    h4 {
+      font-family: @menu-font-family;
     }
 
-    .entry {
-      border-bottom: 1px solid @article-header-line-color;
-      padding-bottom: 20px;
-      margin: 0 20px 20px 20px;
+    h4.title {
+      text-align: left;
 
-      .date {
-        display: inline-block;
-        white-space: nowrap;
-        padding-top: 25px;
+      a {
+        font-family: @menu-font-family;
+        color: @gray-dark;
+        text-decoration: underline;
+
+        &:hover {
+          color: @primary-link-color;
+        }
+      }
+    }
+
+    .date {
+      white-space: nowrap;
+
+      h4 {
         text-align: right;
+      }
+    }
+
+    .references {
+      padding: 0 10px 10px 10px;
+
+      & > span {
+        border-bottom: 1px dotted @gray-light;
+        cursor: pointer;
+
+        &:hover {
+          color: @primary-link-color;
+          border-bottom: 1px dotted @primary-link-color;
+        }
+      }
+
+      a {
+        color: @link-color;
+
+        &:hover,
+        &:focus {
+          color: @link-hover-color;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: @screen-lg) {
+  #blog {
+    .entry {
+      h4 {
+        font-size: @font-size-h5;
       }
     }
   }

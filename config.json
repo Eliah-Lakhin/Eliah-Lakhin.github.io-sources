@@ -1,6 +1,6 @@
 {
     "common": {
-        "siteUrl": "http://www.lakhin.com",
+        "siteUrl": "http://lakhin.com",
         "tagDomain": "http://www.dmoz.org/",
         "tags": ["compilers", "ide", "parsing", "parsers", "code editors",
             "programming languages"],
@@ -59,6 +59,12 @@
                         "key": "Twitter",
                         "value": "eliah_lakhin",
                         "link": "https://twitter.com/eliah_lakhin"
+                    },
+                    {
+                        "key": "Google+",
+                        "value": "Eliah Lakhin",
+                        "link": "https://plus.google.com/112384438131335896587",
+                        "rel": "me"
                     }
                 ],
                 "Contacts": [

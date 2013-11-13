@@ -1,0 +1,23 @@
+@import "variables";
+@import "bootstrap/mixins";
+
+#blog {
+  article {
+    h2, h3, h4, h5, h6 {
+      text-align: left;
+    }
+
+    .entry {
+      border-bottom: 1px solid @article-header-line-color;
+      padding-bottom: 20px;
+      margin: 0 20px 20px 20px;
+
+      .date {
+        display: inline-block;
+        white-space: nowrap;
+        padding-top: 25px;
+        text-align: right;
+      }
+    }
+  }
+}

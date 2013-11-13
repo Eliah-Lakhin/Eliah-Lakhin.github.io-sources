@@ -1,0 +1,42 @@
+@import "variables";
+@import "bootstrap/mixins";
+
+#personal {
+  position: relative;
+  padding: 12px 10px 2px 10px;
+
+  img {
+    text-align: center;
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 100%;
+  }
+
+  .section-name {
+    color: @gray-light
+  }
+
+  .entry-key {
+    color: darken(@brand-primary, 0%)
+  }
+
+  img, pre {
+    max-width: 297px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: @screen-md) {
+  #personal {
+    img {
+      display: none;
+    }
+
+    pre {
+      margin-left: inherit;
+      margin-right: inherit;
+      max-width: 1024px;
+    }
+  }
+}

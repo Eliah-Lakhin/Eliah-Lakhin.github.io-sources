@@ -16,14 +16,13 @@ html(lang="en")
                             each entry in page.posts
                                 .entry
                                     .row
-                                        .col-xs-10
+                                        .col-xs-9
                                             h3
                                                 if entry.post
                                                     a(href="/blog/" + entry.post + "/")= entry.title
                                                 else
                                                     != entry.title
-                                        .col-xs-2
-                                            span.date= entry.date
+                                        .col-xs-3.date= functions.formatBlogEntryDate(entry.date)
                                     if entry.refs
                                         .references
                                             span= page.references + ":"

@@ -6,7 +6,9 @@
             "programming languages"],
         "description": "Ilya Lakhin's personal website. Independent software developer from Russia.",
         "encoding": "UTF-8",
-        "author": "Ilya Lakhin"
+        "author": "Ilya Lakhin",
+        "months": ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"]
     },
 
     "menu": {
@@ -18,7 +20,7 @@
     },
 
     "pages": {
-        "index": {
+        "home": {
             "menu": "home",
             "title": "Ilya Lakhin",
             "brand": {

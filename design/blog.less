@@ -59,13 +59,21 @@
   }
 }
 
-
 @media (max-width: @screen-lg) {
   #blog {
     .entry {
       h4 {
         font-size: @font-size-h5;
       }
+    }
+  }
+}
+
+@media (max-width: @screen-xs) {
+  #blog {
+    .entry {
+      margin-left: -10px;
+      margin-right: 0;
     }
   }
 }

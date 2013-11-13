@@ -1,4 +1,14 @@
 {
+    "common": {
+        "siteUrl": "http://www.lakhin.com",
+        "tagDomain": "http://www.dmoz.org/",
+        "tags": ["compilers", "ide", "parsing", "parsers", "code editors",
+            "programming languages"],
+        "description": "Ilya Lakhin's personal website. Independent software developer from Russia.",
+        "encoding": "UTF-8",
+        "author": "Ilya Lakhin"
+    },
+
     "menu": {
         "home": "Home",
         "github": "GitHub",
@@ -76,13 +86,24 @@
             "caption": "I tried weally hard to find it ^_^"
         },
 
+        "redirect": {
+            "menu": "",
+            "title": "Ilya Lakhin",
+            "brand": {
+                "main": "Ilya Lakhin",
+                "url": "/"
+            },
+            "caption": "You will be redirected to "
+        },
+
         "projects": {
             "menu": "projects",
             "title": "Ilya Lakhin's works",
             "brand": {
                 "main": "The list of my works",
                 "url": "/projects/"
-            }
+            },
+            "description": "Ilya Lakhin's projects and works list"
         },
 
         "project-papa-carlo": {
@@ -93,6 +114,7 @@
                 "sub": "constructor of incremental parsers in Scala",
                 "url": "/projects/papa-carlo/"
             },
+            "description": "Papa Carlo. Constructor of incremental parsers in Scala. The project of Ilya Lakhin.",
             "forkMe": "View on GitHub"
         },
 
@@ -103,29 +125,27 @@
                 "main": "My web logs",
                 "url": "/blog/"
             },
-            "references": "References",
-            "entries": [
+            "references": "External references",
+            "description": "Ilya Lakhin's web logs.",
+            "lastUpdate": "28.10.2013",
+            "posts": [
                 {
                     "title": "Remote job - is not a freelance",
-                    "date": "28.10.2013",
+                    "date": "26.10.2013",
                     "refs": {
-                        "On Habrahabr in Russian": "http://habrahabr.ru/post/199114/"
+                        "On Habrahabr in Russian":
+                            "http://habrahabr.ru/post/199114/"
                     }
                 },
                 {
                     "title": "Functional programming in Java",
                     "date": "28.06.2011",
                     "refs": {
-                        "On Habrahabr in Russian": "http://habrahabr.ru/post/122919/"
+                        "On Habrahabr in Russian":
+                            "http://habrahabr.ru/post/122919/"
                     }
                 }
-            ],
-            "posts": {
-                "10.11.2013": {
-                    "title": "What wrong with code editors",
-                    "article": "11.11.2013-what-wrong-with-code-editors.md"
-                }
-            }
+            ]
         }
     }
 }

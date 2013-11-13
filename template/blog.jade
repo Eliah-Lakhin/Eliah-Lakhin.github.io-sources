@@ -12,4 +12,21 @@ html(lang="en")
                 .col-md-offset-1.col-md-10.light-theme#blog
                     +article("Web logs")
                         include ../content/blog.md
-                        p: include include/blog-list
+                        p
+                            each entry in page.posts
+                                .entry
+                                    .row
+                                        .col-xs-10
+                                            h3
+                                                if entry.post
+                                                    a(href="/blog/" + entry.post + "/")= entry.title
+                                                else
+                                                    != entry.title
+                                        .col-xs-2
+                                            span.date= entry.date
+                                    if entry.refs
+                                        .references
+                                            span= page.references + ":"
+                                            ul
+                                                each ref, caption in entry.refs
+                                                    li: a(href= ref, target="_blank")= caption

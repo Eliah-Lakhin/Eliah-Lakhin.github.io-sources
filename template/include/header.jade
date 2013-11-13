@@ -1,5 +1,10 @@
 title= page.title
 
+meta(name="description", content= page.description || common.description)
+meta(name="keywords", content= (page.tags || common.tags).join(","))
+meta(name="author", content= common.author)
+meta(name="charset", content= common.encoding)
+
 link(rel="shortcut icon", href="/favicon.ico")
 meta(name="viewport", content="width=device-width, initial-scale=1.0")
 

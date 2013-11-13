@@ -1,0 +1,20 @@
+doctype 5
+html(lang="en")
+    head
+        include include/header
+        include include/analytics.jade
+        if custom.redirectUrl
+            meta(http-equiv="Refresh", content="2; url=" + custom.redirectUrl)
+    body
+        include include/menu
+        include include/mixins
+
+        .container.main-container
+            .row
+                .col-md-offset-1.col-md-10.light-theme
+                    +article("301")
+                        img(src="/asset/grumpy.jpg").center-block
+                        br
+                        h4
+                            span= page.caption
+                            a(href="custom.redirectUrl")= custom.redirectUrl

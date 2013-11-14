@@ -1,7 +1,7 @@
-mixin item(title, link, active)
+mixin item(title, link, active, rel)
     li(class="#{active ? 'active' : ''}")
         .triangle
-        a(href= link)= title
+        a(href= link, rel= rel)= title
 
 header.navbar.navbar-default.navbar-custom.navbar-static-top.navbar-inverse(role="navigation")
     .container
@@ -23,7 +23,7 @@ header.navbar.navbar-default.navbar-custom.navbar-static-top.navbar-inverse(role
 
         .collapse.navbar-collapse#main-menu-body
             ul.nav.navbar-nav.navbar-right
-                mixin item(menu.home, "/", page.menu == "home", rel="author")
+                mixin item(menu.home, "/", page.menu == "home", "author")
                 mixin item(menu.blog, "/blog/", page.menu == "blog")
                 mixin item(menu.projects, "/projects/", page.menu == "projects")
                 mixin item(menu.github, "https://github.com/Eliah-Lakhin/")

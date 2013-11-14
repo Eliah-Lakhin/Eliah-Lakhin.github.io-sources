@@ -136,13 +136,23 @@
             "references": "External references",
             "details": "Details",
             "description": "Ilya Lakhin's web logs.",
-            "lastUpdate": "28.10.2013",
+            "lastUpdate": "15.11.2013",
             "posts": [
+                {
+                    "title": "Handy incremental parser",
+                    "post": "handy-incremental-parser.md",
+                    "repo": "papa-carlo",
+                    "date": "15.11.2013",
+                    "refs": {
+                        "Crosspost on Habrahabr in Russian: \"Папа Карло и инкрементальные компиляторы\"":
+                            "http://habrahabr.ru/post/201774/"
+                    }
+                },
                 {
                     "title": "Remote job - is not a freelance",
                     "date": "26.10.2013",
                     "refs": {
-                        "Article on Habrahabr in Russian":
+                        "Article on Habrahabr in Russian: \"Удаленная работа — это не «фриланс»  Редактировать\"":
                             "http://habrahabr.ru/post/199114/"
                     }
                 },
@@ -150,7 +160,7 @@
                     "title": "Functional programming in Java",
                     "date": "28.06.2011",
                     "refs": {
-                        "Article on Habrahabr in Russian":
+                        "Article on Habrahabr in Russian: \"Функциональное программирование в Java\"":
                             "http://habrahabr.ru/post/122919/"
                     }
                 }

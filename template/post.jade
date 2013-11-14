@@ -1,0 +1,28 @@
+doctype 5
+html(lang="en")
+    head
+        include include/header
+        include include/google-api.jade
+        include include/analytics.jade
+    body
+        include include/facebook-api.jade
+        include include/menu
+        include include/mixins
+
+        .container.main-container
+            .row
+                .col-md-offset-1.col-md-10.light-theme
+                    +article(custom.post.title)
+                        case custom.post.post
+                            when "handy-incremental-parser.md"
+                                include ../content/posts/handy-incremental-parser.md
+            br
+            .row
+                .col-md-offset-1.col-md-10.light-theme
+                    br
+                    article: p
+                        include include/disqus
+
+                        +social(common.siteUrl + custom.postUrl,
+                                custom.post.title,
+                                custom.post.repo)

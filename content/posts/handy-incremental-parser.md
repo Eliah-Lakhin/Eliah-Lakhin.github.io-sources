@@ -16,7 +16,7 @@ editors and IDEs by two reasons:
 Another problem is that PL compilers and appropriate IDE plugins are usually
 developed separately for each code editor.
 
-The solution for this problem might be designing compiler's front-end to work
+The solution for these problems might be designing compiler's front-end to work
 as a compilation server in incremental fashion:
 
  * It should be able to provide code editor through it's API with metadata on
@@ -66,7 +66,7 @@ under the APL2 license.
 The library provides the following features:
 
  * Parser's grammar defined right in the Scala code using library's API. No
-   generation explicit generation steps.
+   explicit generation steps.
  * The API represents Parsing Expression Grammar operators. PEG is probably the
    most popular and easy to understand PL grammar for a nowadays.
  * Resulting parser builds and incrementally updates Abstract Syntax Tree out of
@@ -130,10 +130,10 @@ object Calculator {
 ```
 
 The parser will be able to parse precedence expressions like this
-`1 - -2 / 3 * +(4 / 5) + 6 + 7% + 8`, build and update AST, and recovery syntax
+`1 - -2 / 3 * +(4 / 5) + 6 + 7% + 8`, build and update AST, and recover syntax
 errors.
 
-The more interesting example is
+But the more interesting example is
 [JSON parser](https://github.com/Eliah-Lakhin/papa-carlo/blob/master/src/main/scala/name.lakhin.eliah.projects/papacarlo/examples/Json.scala),
 that incrementally parses large input files with over 600 lines of source code.
 In one of the included tests these files has been changed and parsed several

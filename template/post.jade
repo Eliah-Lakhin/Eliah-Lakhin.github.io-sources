@@ -10,13 +10,15 @@ html(lang="en")
         include include/mixins
 
         .container.main-container
-            .row
+            .row.post
                 .col-md-offset-1.col-md-10.light-theme
                     +article(custom.post.title)
                         case custom.post.post
                             when "handy-incremental-parser.md"
                                 include ../content/posts/handy-incremental-parser.md
+
             br
+
             .row
                 .col-md-offset-1.col-md-10.light-theme
                     br

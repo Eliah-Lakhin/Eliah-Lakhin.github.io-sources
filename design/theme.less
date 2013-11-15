@@ -10,7 +10,7 @@
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro);
 
 body {
-  background: url('/asset/file000624709884.jpg') no-repeat center center fixed;
+  background: url('/images/file000624709884.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -66,7 +66,7 @@ body {
   }
 
   .navbar-brand {
-    background-image: url('/asset/logo-min.png');
+    background-image: url('/images/logo-min.png');
     background-position: 18px;
     background-repeat: no-repeat;
     padding-left: 75px;
@@ -231,6 +231,11 @@ body {
     margin-bottom: 100px;
     padding: 0 10%;
 
+    img {
+      display: block;
+      margin: auto;
+    }
+
     h1.section-header {
       display: block;
       text-align: center;
@@ -266,6 +271,10 @@ body {
       width: 100%;
       color: @gray-lighter;
       margin: 20px 0;
+
+      a {
+        color: lighten(@link-color, 40%)
+      }
 
       td, th {
         padding: @table-cell-padding;

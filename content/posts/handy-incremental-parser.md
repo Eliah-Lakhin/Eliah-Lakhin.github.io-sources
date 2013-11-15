@@ -1,4 +1,4 @@
-#### Problem
+### Problem
 
 Most of the PL compilers usually process the whole set of source codes at once.
 And optimized for fast performance. Even though compilation time in this
@@ -35,8 +35,8 @@ In other words the idea is to move code editor's conventional responsibilities
 to compiler's side. So the compiler becomes universal reusable component for
 a set of code editors and IDEs. Whereas the editor works as a thin client that
 depends on compilation server. The advantage of this approach is simplifying
-development of PL plugins for code editors and IDEs, and support unification of
-their support.
+development of PL plugins for code editors and IDEs, and unification of their
+support.
 
 The heart of the compiler's front-end is a source code parser. And the parser of
 incremental compiler should work in incremental fashion as well.
@@ -54,3 +54,100 @@ used by the almost developers.
 The goal of my project is eliminating the lack of such instruments, by providing
 easy to use library for constructing incremental parsers with a number of
 handy features that compiler and PL support plugin developers usually need.
+
+### Papa Carlo
+
+I am pleased to introduce you my project
+[Papa Carlo](http://localhost:8000/projects/papa-carlo/). This is a Scala
+library to construct recursive descent incremental parsers based on PEG grammar.
+The project is published on [GitHub](https://github.com/Eliah-Lakhin/papa-carlo)
+under the APL2 license.
+
+The library provides the following features:
+
+ * Parser's grammar defined right in the Scala code using library's API. No
+   generation explicit generation steps.
+ * The API represents Parsing Expression Grammar operators. PEG is probably the
+   most popular and easy to understand PL grammar for a nowadays.
+ * Resulting parser builds and incrementally updates Abstract Syntax Tree out of
+   the box. And there is no intermediate Parsing Tree build step.
+ * Efficient error recovery. Result parser can build or update AST even from
+   the source code that contains syntax errors.
+ * Expression grammar with infix operators can be defined with special prepared
+   operators based on Pratt algorithm.
+
+The simple example of a full-feature expression parser can be defined with Papa
+Carlo in one short
+[Scala file](https://github.com/Eliah-Lakhin/papa-carlo/blob/master/src/main/scala/name.lakhin.eliah.projects/papacarlo/examples/Calculator.scala):
+
+```scala
+object Calculator {
+  private def tokenizer = {
+    val tokenizer = new Tokenizer()
+
+    import tokenizer._
+    import Matcher._
+
+    tokenCategory("whitespace", oneOrMore(anyOf(" \t\f\n"))).skip
+
+    tokenCategory("number", choice(chunk("0"), sequence(rangeOf('1', '9'),
+      zeroOrMore(rangeOf('0', '9')))))
+
+    terminals("(", ")", "%", "+", "-", "*", "/")
+
+    tokenizer
+  }
+
+  def lexer = new Lexer(tokenizer, new Contextualizer)
+
+  def syntax(lexer: Lexer) = new {
+    val syntax = new Syntax(lexer)
+
+    import syntax._
+    import Rule._
+    import Expressions._
+
+    mainRule("expression") {
+      val rule =
+        expression(branch("operand", recover(number, "operand required")))
+
+      group(rule, "(", ")")
+      postfix(rule, "%", 1)
+      prefix(rule, "+", 2)
+      prefix(rule, "-", 2)
+      infix(rule, "*", 3)
+      infix(rule, "/", 3, rightAssociativity = true)
+      infix(rule, "+", 4)
+      infix(rule, "-", 4)
+
+      rule
+    }
+
+    val number = rule("number") {capture("value", token("number"))}
+  }.syntax
+}
+
+```
+
+The parser will be able to parse precedence expressions like this
+`1 - -2 / 3 * +(4 / 5) + 6 + 7% + 8`, build and update AST, and recovery syntax
+errors.
+
+The more interesting example is
+[JSON parser](https://github.com/Eliah-Lakhin/papa-carlo/blob/master/src/main/scala/name.lakhin.eliah.projects/papacarlo/examples/Json.scala),
+that incrementally parses large input files with over 600 lines of source code.
+In one of the included tests these files has been changed and parsed several
+times:
+
+| File | Difference (lines) |  Syntax errors | Number of AST nodes | Parse time (seconds) |
+|:----:|:------------------:|:--------------:|:-------------------:|:--------------------:|
+| [Version 1](https://github.com/Eliah-Lakhin/papa-carlo/blob/master/src/test/resources/fixtures/json/large/input/step0.txt) | - | 0 | 918 | 0.270 |
+| [Version 2](https://github.com/Eliah-Lakhin/papa-carlo/blob/master/src/test/resources/fixtures/json/large/input/step1.txt) | 1 | 1 | 923 | 0.007 |
+| [Version 3](https://github.com/Eliah-Lakhin/papa-carlo/blob/master/src/test/resources/fixtures/json/large/input/step2.txt) | 2 | 3 | 924 | 0.008 |
+
+This is where incremental parsing approach advantages take place.
+
+Also Papa Carlo includes API to log and debug various aspects of developing
+parser. This technique was used to cover the parser with a number of functional
+tests.
+

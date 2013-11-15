@@ -17,6 +17,17 @@ html(lang="en")
                             when "handy-incremental-parser.md"
                                 include ../content/posts/handy-incremental-parser.md
 
+                        hr
+
+                        if custom.post.refs
+                            .references
+                                span(data-toggle="collapse",
+                                     data-target="#details")= pages.blog.references
+                                .details.collapse(id="details")
+                                    ul
+                                        each ref, caption in custom.post.refs
+                                            li: a(href= ref, target="_blank")= caption
+
             br
 
             .row

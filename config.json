@@ -143,7 +143,12 @@
                     "post": "handy-incremental-parser.md",
                     "repo": "papa-carlo",
                     "date": "15.11.2013",
+                    "description": "Introduction of Papa Carlo - constructor of incremental parsers written in Scala.",
                     "refs": {
+                        "Papa Carlo documentation website":
+                            "/projects/papa-carlo/",
+                        "Papa Carlo source code on GitHub":
+                            "https://github.com/Eliah-Lakhin/papa-carlo",
                         "Crosspost on Habrahabr in Russian: \"Папа Карло и инкрементальные компиляторы\"":
                             "http://habrahabr.ru/post/201774/"
                     }

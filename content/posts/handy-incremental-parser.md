@@ -150,4 +150,3 @@ This is where incremental parsing approach advantages take place.
 Also Papa Carlo includes API to log and debug various aspects of developing
 parser. This technique was used to cover the parser with a number of functional
 tests.
-

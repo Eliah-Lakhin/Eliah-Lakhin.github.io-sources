@@ -17,7 +17,7 @@ rss(version= "2.0")
                     title= post.title
                     guid(isPermaLink="true")= common.siteUrl + "/blog/" + functions.blogPostId(post.date, post.title) + "/"
                     if post.description
-                        title= post.description
+                        description= post.description
                     if post.content
                         link= common.siteUrl + "/blog/" + functions.blogPostId(post.date, post.title) + "/"
                     else

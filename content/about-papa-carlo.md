@@ -18,8 +18,8 @@ Key features:
    defines parser using Papa Carlo's API right in the Scala code.
  * **PEG grammars**. Modern and easy to understand language definition grammar.
  * **Expression parsing with Pratt algorithm.** Complicated expression syntax
-   with a number of infix precedence operators can be defined in a few lines
-   of Scala code.
+   with a number of unary/binary precedence operators can be defined in a few
+   lines of Scala code.
 
 The project is [published on GitHub](https://github.com/Eliah-Lakhin/papa-carlo)
 under the terms of

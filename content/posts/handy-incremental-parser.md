@@ -58,7 +58,7 @@ handy features that compiler and PL support plugin developers usually need.
 ### Papa Carlo
 
 I am pleased to introduce you my project
-[Papa Carlo](http://localhost:8000/projects/papa-carlo/). This is a Scala
+[Papa Carlo](/projects/papa-carlo/). This is a Scala
 library to construct recursive descent incremental parsers based on PEG grammar.
 The project is published on [GitHub](https://github.com/Eliah-Lakhin/papa-carlo)
 under the APL2 license.

@@ -9,7 +9,7 @@ This approach is not suitable for writing language support plugins for code
 editors and IDEs for two reasons:
 
  * The editor must always be in touch with source code's syntax and semantics.
- * Small and frequent changes end user makes to the source code should be
+ * Small and frequent changes end users make to the source code should be
    indexed immediately, without any significant time delays.
 
 Another problem is that PL compilers and appropriate IDE plugins are usually
@@ -77,7 +77,7 @@ The library provides the following features:
    defined based on Pratt algorithm using dedicated functions like ``infix()``
    or ``group()``.
 
-The simple example of a full-feature expression parser can be defined with Papa
+The simple example of a full-featured expression parser can be defined with Papa
 Carlo in one short
 [Scala file](https://github.com/Eliah-Lakhin/papa-carlo/blob/master/src/main/scala/name.lakhin.eliah.projects/papacarlo/examples/Calculator.scala):
 

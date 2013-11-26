@@ -145,11 +145,13 @@
                     "date": "15.11.2013",
                     "description": "Introduction of Papa Carlo - constructor of incremental parsers written in Scala.",
                     "refs": {
-                        "Papa Carlo documentation website":
+                        "Documentation website":
                             "/projects/papa-carlo/",
-                        "Papa Carlo source code on GitHub":
+                        "Source codes on GitHub":
                             "https://github.com/Eliah-Lakhin/papa-carlo",
-                        "Discussion on Lambda the Ultimate":
+                        "Discussion on Reddit":
+                            "http://www.reddit.com/r/programming/comments/1rfyzx/whats_wrong_with_the_most_programming_language/",
+                        "Incremental parsing approach brief description on Lambda the Ultimate":
                             "http://lambda-the-ultimate.org/node/4840",
                         "Crosspost on Habrahabr in Russian":
                             "http://habrahabr.ru/post/201774/"

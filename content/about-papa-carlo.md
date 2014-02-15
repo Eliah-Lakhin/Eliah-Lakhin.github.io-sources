@@ -29,3 +29,8 @@ Library's build artifacts are hosted on
 [Sonatype](http://oss.sonatype.org/content/groups/public/name/lakhin/eliah/projects/papacarlo/)
 and [Maven Central](http://central.maven.org/maven2/name/lakhin/eliah/projects/papacarlo/)
 remote repositories. They are ready to use in the SBT based projects.
+
+Support:
+
+ * [User support forum](https://groups.google.com/forum/#!forum/papa-carlo).
+ * [Issue tracker](https://github.com/Eliah-Lakhin/papa-carlo/issues).

@@ -4,6 +4,9 @@ Papa Carlo was designed to construct programming language parsers that may be
 used in a wide range of code editors from simple syntax highlighters to
 full-featured IDEs like Eclipse or IntelliJ Idea.
 
+Please, visit [Demo page](/projects/papa-carlo/demo) to see an incremental
+parser in action.
+
 Key features:
 
  * **Incremental parsing**. Parsing performance is always proportional to the
@@ -15,11 +18,11 @@ Key features:
  * **Error-recovery mechanism**. The parser can recognise source code even if
    the code contains syntax errors.
  * **Language definition using DSL in Scala.** No external files needed. The
-   developer can define parser using the library's API in the Scala code.
+   developer can define parser using library's API in the Scala code.
  * **PEG grammars**. Modern and easy to understand language definition grammar.
  * **Expression parsing with Pratt algorithm.** Complicated expression syntax
    with a number of unary/binary precedence operators can be defined in a few
-   lines of source code.
+   lines of code.
 
 The project is [published on GitHub](https://github.com/Eliah-Lakhin/papa-carlo)
 under the terms of

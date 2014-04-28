@@ -36,6 +36,11 @@
                         "value": "Software developer"
                     },
                     {
+                        "key": "Resume",
+                        "value": "Download PDF",
+                        "link": "https://dl.dropboxusercontent.com/u/26689230/cv.pdf"
+                    },
+                    {
                         "key": "Location",
                         "value": "Novosibirsk, Russia",
                         "link": "http://en.wikipedia.org/wiki/Akademgorodok"

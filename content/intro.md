@@ -7,7 +7,7 @@ front-end and back-end technologies.
 But my interest is not limited to web development only. My other big passion
 is tools made for other software engineers. Such as programming language
 compilers, IDEs, and code editors. Now I am working on my own set of programming
-[instruments](/projects/). My development plan goal is to implement
+[instruments](/projects/#research). My development plan goal is to implement
 full-featured development environment that will run right on the Web. And I hope
 it will raise software development to a new level.
 

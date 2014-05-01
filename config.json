@@ -144,11 +144,23 @@
             "lastUpdate": "15.11.2013",
             "posts": [
                 {
-                    "title": "Handy incremental parser",
+                    "title": "The Future of Web IDEs",
+                    "post": "the-future-of-web-ides.md",
+                    "repo": "papa-carlo",
+                    "date": "02.05.2014",
+                    "description": "Demo webapp of the incremental parser. Thoughts on Web IDEs for programming languages with static typing.",
+                    "refs": {
+                        "Demo Incremental Parser": "http://lakhin.com/projects/papa-carlo/demo/",
+                        "Source code on Github": "https://github.com/Eliah-Lakhin/papa-carlo",
+                        "Crosspost on Habrahabr in Russian": "http://habrahabr.ru/post/221213/"
+                    }
+                },
+                {
+                    "title": "Handy Incremental Parser",
                     "post": "handy-incremental-parser.md",
                     "repo": "papa-carlo",
                     "date": "15.11.2013",
-                    "description": "Introduction of Papa Carlo - constructor of incremental parsers written in Scala.",
+                    "description": "Introduction to Papa Carlo - constructor of incremental parsers written in Scala.",
                     "refs": {
                         "Documentation website":
                             "/projects/papa-carlo/",

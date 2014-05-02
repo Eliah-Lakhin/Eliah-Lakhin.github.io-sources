@@ -8,7 +8,10 @@ pre: code
             if (entry.key)
                 span.entry-key= entry.key + ': '
             if (entry.link)
-                a(href= entry.link, target= "_blank", rel= entry.rel)= entry.value
+                a(href= entry.link,
+                  target= "_blank",
+                  rel= entry.rel,
+                  download= entry.downloadable)= entry.value
             else
                 != entry.value
             != '\n'

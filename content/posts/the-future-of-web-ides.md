@@ -39,8 +39,7 @@ Incremental parsers are responsible for continuous scanning the code for
 methods, functions and variable definitions, and their application sites in the
 project file's.
 
-An incremental parser is differ from the ordinary parser by a number of
-properties:
+An incremental parser is differ from ordinary parser by a number of properties:
 
 1. **Continuous indexing the code in real time**. An ordinary compiler scans
 entire source code once, and then it stops. If the end user changes something in
@@ -63,17 +62,16 @@ developers usually have to implement these core parsers for the IDEs more or
 less manually.
 
 That's why I have developed my own parsing library -
-[Papa Carlo](/projects/papa-carlo/) - designed especially for development of the
+[Papa Carlo](/projects/papa-carlo/) - designed especially for development of
 incremental compilers. The API of the library should be familiar for
-developers who have worked with the ordinary parser combinators and generators.
+developers who have worked with ordinary parser combinators and generators.
 But the resulting parser has all of the features mentioned above out of the box.
 
-The Demo example I referred in the beginning of the post is written on top of
+The Demo example I referred to in the beginning of the post is written on top of
 the Papa Carlo library. It doesn't use server-side to process computations,
-the parser works completely in the web browser. I believe, this approach may
+the parser works completely in the web browser. I believe this approach may
 be scaled up to develop language support plugins for the modern Web Editors to
-turn them to the full-featured IDEs comparable to the class of the desktop based
-IDEs.
+turn them into full-featured IDEs comparable to the desktop based IDEs.
 
 ### A few words about the Demo
 

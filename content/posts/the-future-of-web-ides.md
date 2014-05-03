@@ -21,7 +21,7 @@ workstation. At first glance, it seems like a good solution for web developers
 who are working with dynamic typing languages such as JavaScript, Ruby, PHP,
 Python, etc.
 
-However, we must admit they don't shine so much when we are talking about
+However, we should admit they don't shine so much when we are talking about
 static typing languages like Java, C# or Objective-C. Especially, when we are
 comparing web editors with the major well known solutions for desktops such as
 Visual Studio, IntelliJ Idea or Eclipse. The key difference of the desktop based 
@@ -48,7 +48,7 @@ inappropriate for IDEs, since complete compilation of the project may takes
 seconds if not minutes.
 
 2. **Syntax error tolerance**. When the developer writing a code, the program is
-frequently stands in the syntactic incorrect states. However, IDE must be able
+frequently stands in the syntactic incorrect states. However, IDE should be able
 to recognize the rest of the code. For example, to be able to provide the user
 with a Code-Completion feature in any place of the code.
 

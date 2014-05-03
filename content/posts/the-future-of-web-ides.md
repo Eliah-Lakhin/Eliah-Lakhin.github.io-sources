@@ -10,7 +10,7 @@ ago.
 ### Web IDE
 
 These days popularity of the text editors made completely on top of web
-technologies is growing fast. Probably, you have heared about such products as
+technologies is growing fast. Probably, you have heard about such products as
 Cloud9, Koding or even Atom.io from GitHub released recently. Tens if not
 hundreds of new instances entering the stage.
 
@@ -82,7 +82,7 @@ client-side. The server hosted only the static content: JS and HTML sources.
 
 The parser is running in the WebWorker (if possible). Since that, application
 loading is distributed between two threads: one of them is responsible for UI
-management, and another one performce compilation.
+management, and another one performs compilation.
 
 All of the visual features are done with SVG using the d3.js library. The code
 editor on the left side of the screen is a Code Mirror widget.

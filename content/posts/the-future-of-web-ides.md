@@ -39,7 +39,8 @@ Incremental parsers are responsible for continuous scanning the code for
 methods, functions and variable definitions, and their application sites in the
 project file's.
 
-An incremental parser is differ from ordinary parser by a number of properties:
+An incremental parser has a number of properties different from an ordinary
+parser:
 
 1. **Continuous indexing the code in real time**. An ordinary compiler scans
 entire source code once, and then it stops. If the end user changes something in

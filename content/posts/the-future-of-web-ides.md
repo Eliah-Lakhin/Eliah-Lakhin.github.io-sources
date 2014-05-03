@@ -24,12 +24,13 @@ Python, etc.
 However, we should admit they don't shine so much when we are talking about
 static typing languages like Java, C# or Objective-C. Especially, when we are
 comparing web editors with the major well known solutions for desktops such as
-Visual Studio, IntelliJ Idea or Eclipse. The key difference of the desktop based 
-"old-school" editors is the ability of deep syntax and semantic understanding of
-the programming languages. Finally, they provide end users with a number of
-handy and smart code manipulation instruments, including Code Completion,
-Jump To Definition, Refactoring/Renaming. Having these features is very
-important when we are working with the large codebase.
+Visual Studio, IntelliJ Idea or Eclipse. The key distinguishing feature of
+desktop based "old-school" editors "old-school" editors is the ability of deep
+syntax and semantic understanding of the programming languages. Finally, they
+provide end users with a number of handy and smart code manipulation
+instruments, including Code Completion, Jump To Definition,
+Refactoring/Renaming. Having these features is very important when we are
+working with the large codebase.
 
 Internally, these editors accomplish their abilities by continuous indexing
 source codes of the entire project files. They perform indexing using so called

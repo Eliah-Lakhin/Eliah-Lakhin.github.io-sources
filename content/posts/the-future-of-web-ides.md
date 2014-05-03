@@ -1,15 +1,15 @@
 [![Click to open Demo web application](http://i.imgur.com/XGSswoh.png?1)](/projects/papa-carlo/demo/)
 
-In this post I would like to explain why having incremental compiler is
+In this post I would like to explain why having an incremental compiler is
 important for the browser based IDEs and text editors.
 
-To understand what incremental compiler is, please take a look at the
+To understand what an incremental compiler is, please take a look at the
 [Demo web application](/projects/papa-carlo/demo/) I have published a few days
 ago.
 
 ### Web IDE
 
-These days popularity of the text editors made completely on top of web
+These days popularity of text editors made completely on top of web
 technologies is growing fast. Probably, you have heard about such products as
 Cloud9, Koding or even Atom.io from GitHub released recently. Tens if not
 hundreds of new instances entering the stage.

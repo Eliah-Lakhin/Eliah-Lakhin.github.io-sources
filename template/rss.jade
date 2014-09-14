@@ -12,7 +12,7 @@ rss(version= "2.0")
             category(domain= common.tagDomain)= tag
 
         each post in page.posts
-            if !custom.filterEnglish || !!post.post
+            if !custom.filterEnglish || !!post.post || !!post.inEnglish
                 item
                     title= post.title
                     guid(isPermaLink="true")= common.siteUrl + "/blog/" + functions.blogPostId(post.date, post.title) + "/"

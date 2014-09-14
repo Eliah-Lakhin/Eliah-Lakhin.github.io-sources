@@ -145,6 +145,17 @@
             "lastUpdate": "15.11.2013",
             "posts": [
                 {
+                    "title": "Papa Carlo on Scala Days 2014",
+                    "date": "18.06.2014",
+                    "repo": "papa-carlo",
+                    "inEnglish": true,
+                    "description": "Papa Carlo was demonstrated on Scala Days 2014 as an example of application built with Scala.JS by the author of Scala.JS Sébastien Doeraene",
+                    "refs": {
+                        "Scala Days 2014 - video stream":
+                            "http://www.parleys.com/play/53a7d2cbe4b0543940d9e555/chapter35/agenda"
+                    }
+                },
+                {
                     "title": "The Future of Web IDEs",
                     "post": "the-future-of-web-ides.md",
                     "repo": "papa-carlo",

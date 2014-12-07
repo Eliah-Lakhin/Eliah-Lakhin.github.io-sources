@@ -1,208 +1,209 @@
 {
-    "common": {
-        "siteUrl": "http://lakhin.com",
-        "tagDomain": "http://www.dmoz.org/",
-        "tags": ["compilers", "ide", "parsing", "parsers", "code editors",
-            "programming languages"],
-        "description": "Ilya Lakhin's personal website. Independent software developer from Russia.",
-        "encoding": "UTF-8",
-        "author": "Ilya Lakhin",
-        "months": ["January", "February", "March", "April", "May", "June",
-            "July", "August", "September", "October", "November", "December"]
+  "common": {
+    "siteUrl": "http://lakhin.com",
+    "tagDomain": "http://www.dmoz.org/",
+    "tags": ["compilers", "ide", "parsing", "parsers", "code editors",
+      "programming languages"],
+    "description": "Ilya Lakhin's personal website. Independent software developer from Russia.",
+    "encoding": "UTF-8",
+    "author": "Ilya Lakhin",
+    "months": ["January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"]
+  },
+
+  "menu": {
+    "home": "Home",
+    "github": "GitHub",
+    "blog": "Blog",
+    "projects": "Works",
+    "toggle": "Toggle navigation"
+  },
+
+  "pages": {
+    "home": {
+      "menu": "home",
+      "title": "Ilya Lakhin",
+      "brand": {
+        "main": "Ilya Lakhin",
+        "url": "/"
+      },
+      "profile": {
+        "Profile": [
+          {
+            "value": "Ilya Lakhin"
+          },
+          {
+            "value": "Software developer"
+          },
+          {
+            "key": "Resume",
+            "value": "Download PDF",
+            "link": "https://dl.dropboxusercontent.com/u/26689230/cv.pdf",
+            "downloadable": true
+          },
+          {
+            "key": "Location",
+            "value": "Novosibirsk, Russia",
+            "link": "http://en.wikipedia.org/wiki/Akademgorodok"
+          },
+          {
+            "key": "Alma mater",
+            "value": "NSU",
+            "link": "http://en.wikipedia.org/wiki/Novosibirsk_State_University"
+          }
+        ],
+        "Network": [
+          {
+            "key": "GitHub",
+            "value": "Eliah-Lakhin",
+            "link": "https://github.com/Eliah-Lakhin"
+          },
+          {
+            "key": "oDesk",
+            "value": "Remote contractor",
+            "link": "https://www.odesk.com/users/~01dbf2ebf18c175658"
+          },
+          {
+            "key": "Twitter",
+            "value": "eliah_lakhin",
+            "link": "https://twitter.com/eliah_lakhin"
+          },
+          {
+            "key": "Google Plus",
+            "value": "Google+",
+            "link": "https://plus.google.com/112384438131335896587",
+            "rel": "me"
+          }
+        ],
+        "Contacts": [
+          {
+            "key": "Email",
+            "value": "eliah.lakhin@gmail.com",
+            "link": "mailto:eliah.lakhin@gmail.com"
+          },
+          {
+            "key": "Skype",
+            "value": "eliah.lakhin",
+            "link": "skype:eliah.lakhin"
+          }
+        ]
+      }
     },
 
-    "menu": {
-        "home": "Home",
-        "github": "GitHub",
-        "blog": "Blog",
-        "projects": "Works",
-        "toggle": "Toggle navigation"
+    "page404": {
+      "menu": "",
+      "title": "Ilya Lakhin",
+      "brand": {
+        "main": "Ilya Lakhin",
+        "url": "/"
+      },
+      "caption": "I tried weally hard to find it ^_^"
     },
 
-    "pages": {
-        "home": {
-            "menu": "home",
-            "title": "Ilya Lakhin",
-            "brand": {
-                "main": "Ilya Lakhin",
-                "url": "/"
-            },
-            "profile": {
-                "Profile": [
-                    {
-                        "value": "Ilya Lakhin"
-                    },
-                    {
-                        "value": "Software developer"
-                    },
-                    {
-                        "key": "Resume",
-                        "value": "Download PDF",
-                        "link": "https://dl.dropboxusercontent.com/u/26689230/cv.pdf",
-                        "downloadable": true
-                    },
-                    {
-                        "key": "Location",
-                        "value": "Novosibirsk, Russia",
-                        "link": "http://en.wikipedia.org/wiki/Akademgorodok"
-                    },
-                    {
-                        "key": "Alma mater",
-                        "value": "NSU",
-                        "link": "http://en.wikipedia.org/wiki/Novosibirsk_State_University"
-                    }
-                ],
-                "Network": [
-                    {
-                        "key": "GitHub",
-                        "value": "Eliah-Lakhin",
-                        "link": "https://github.com/Eliah-Lakhin"
-                    },
-                    {
-                        "key": "oDesk",
-                        "value": "Remote contractor",
-                        "link": "https://www.odesk.com/users/~01dbf2ebf18c175658"
-                    },
-                    {
-                        "key": "Twitter",
-                        "value": "eliah_lakhin",
-                        "link": "https://twitter.com/eliah_lakhin"
-                    },
-                    {
-                        "key": "Google Plus",
-                        "value": "Google+",
-                        "link": "https://plus.google.com/112384438131335896587",
-                        "rel": "me"
-                    }
-                ],
-                "Contacts": [
-                    {
-                        "key": "Email",
-                        "value": "eliah.lakhin@gmail.com",
-                        "link": "mailto:eliah.lakhin@gmail.com"
-                    },
-                    {
-                        "key": "Skype",
-                        "value": "eliah.lakhin",
-                        "link": "skype:eliah.lakhin"
-                    }
-                ]
-            }
-        },
+    "redirect": {
+      "menu": "",
+      "title": "Ilya Lakhin",
+      "brand": {
+        "main": "Ilya Lakhin",
+        "url": "/"
+      },
+      "caption": "You will be redirected to "
+    },
 
-        "page404": {
-            "menu": "",
-            "title": "Ilya Lakhin",
-            "brand": {
-                "main": "Ilya Lakhin",
-                "url": "/"
-            },
-            "caption": "I tried weally hard to find it ^_^"
-        },
+    "projects": {
+      "menu": "projects",
+      "title": "Ilya Lakhin's works",
+      "brand": {
+        "main": "The list of my works",
+        "url": "/projects/"
+      },
+      "description": "Ilya Lakhin's projects and works list"
+    },
 
-        "redirect": {
-            "menu": "",
-            "title": "Ilya Lakhin",
-            "brand": {
-                "main": "Ilya Lakhin",
-                "url": "/"
-            },
-            "caption": "You will be redirected to "
-        },
+    "project-papa-carlo": {
+      "menu": "projects",
+      "title": "Papa Carlo",
+      "brand": {
+        "main": "Papa Carlo",
+        "sub": "constructor of incremental parsers in Scala",
+        "url": "/projects/papa-carlo/"
+      },
+      "description": "Papa Carlo. Constructor of incremental parsers in Scala. The project of Ilya Lakhin.",
+      "forkMe": "View on GitHub"
+    },
 
-        "projects": {
-            "menu": "projects",
-            "title": "Ilya Lakhin's works",
-            "brand": {
-                "main": "The list of my works",
-                "url": "/projects/"
-            },
-            "description": "Ilya Lakhin's projects and works list"
+    "blog": {
+      "menu": "blog",
+      "title": "Ilya Lakhin's blog",
+      "brand": {
+        "main": "My web logs",
+        "url": "/blog/"
+      },
+      "references": "External references",
+      "details": "Details",
+      "description": "Ilya Lakhin's web logs.",
+      "lastUpdate": "15.11.2013",
+      "posts": [
+        {
+          "title": "My Speech at Software Freedom Day 2014",
+          "date": "21.09.2014",
+          "repo": "papa-carlo",
+          "refs": {
+            "Screencast": "http://www.youtube.com/watch?v=RfAhRqmalFE",
+            "Slides": "http://slides.com/lakhin/sfd-2014-ru/"
+          }
         },
-
-        "project-papa-carlo": {
-            "menu": "projects",
-            "title": "Papa Carlo",
-            "brand": {
-                "main": "Papa Carlo",
-                "sub": "constructor of incremental parsers in Scala",
-                "url": "/projects/papa-carlo/"
-            },
-            "description": "Papa Carlo. Constructor of incremental parsers in Scala. The project of Ilya Lakhin.",
-            "forkMe": "View on GitHub"
+        {
+          "title": "Papa Carlo on Scala Days 2014",
+          "date": "18.06.2014",
+          "repo": "papa-carlo",
+          "inEnglish": true,
+          "description": "Papa Carlo was demonstrated on Scala Days 2014 as an example of application built with Scala.JS by the author of Scala.JS Sébastien Doeraene",
+          "refs": {
+            "Scala Days 2014 - video stream": "http://www.parleys.com/play/53a7d2cbe4b0543940d9e555/chapter35/agenda"
+          }
         },
-
-        "blog": {
-            "menu": "blog",
-            "title": "Ilya Lakhin's blog",
-            "brand": {
-                "main": "My web logs",
-                "url": "/blog/"
-            },
-            "references": "External references",
-            "details": "Details",
-            "description": "Ilya Lakhin's web logs.",
-            "lastUpdate": "15.11.2013",
-            "posts": [
-                {
-                    "title": "Papa Carlo on Scala Days 2014",
-                    "date": "18.06.2014",
-                    "repo": "papa-carlo",
-                    "inEnglish": true,
-                    "description": "Papa Carlo was demonstrated on Scala Days 2014 as an example of application built with Scala.JS by the author of Scala.JS Sébastien Doeraene",
-                    "refs": {
-                        "Scala Days 2014 - video stream":
-                            "http://www.parleys.com/play/53a7d2cbe4b0543940d9e555/chapter35/agenda"
-                    }
-                },
-                {
-                    "title": "The Future of Web IDEs",
-                    "post": "the-future-of-web-ides.md",
-                    "repo": "papa-carlo",
-                    "date": "02.05.2014",
-                    "description": "Demo webapp of the incremental parser. Thoughts on Web IDEs for programming languages with static typing.",
-                    "refs": {
-                        "Demo Incremental Parser": "http://lakhin.com/projects/papa-carlo/demo/",
-                        "Source code on Github": "https://github.com/Eliah-Lakhin/papa-carlo",
-                        "Crosspost on Habrahabr in Russian": "http://habrahabr.ru/post/221213/"
-                    }
-                },
-                {
-                    "title": "Handy Incremental Parser",
-                    "post": "handy-incremental-parser.md",
-                    "repo": "papa-carlo",
-                    "date": "15.11.2013",
-                    "description": "Introduction to Papa Carlo - constructor of incremental parsers written in Scala.",
-                    "refs": {
-                        "Documentation website":
-                            "/projects/papa-carlo/",
-                        "Source codes on GitHub":
-                            "https://github.com/Eliah-Lakhin/papa-carlo",
-                        "Discussion on Reddit":
-                            "http://www.reddit.com/r/programming/comments/1rfyzx/whats_wrong_with_the_most_programming_language/",
-                        "Incremental parsing approach brief description on Lambda the Ultimate":
-                            "http://lambda-the-ultimate.org/node/4840",
-                        "Crosspost on Habrahabr in Russian":
-                            "http://habrahabr.ru/post/201774/"
-                    }
-                },
-                {
-                    "title": "Remote job - is not a freelance",
-                    "date": "26.10.2013",
-                    "refs": {
-                        "Article on Habrahabr in Russian":
-                            "http://habrahabr.ru/post/199114/"
-                    }
-                },
-                {
-                    "title": "Functional programming in Java",
-                    "date": "28.06.2011",
-                    "refs": {
-                        "Article on Habrahabr in Russian":
-                            "http://habrahabr.ru/post/122919/"
-                    }
-                }
-            ]
+        {
+          "title": "The Future of Web IDEs",
+          "post": "the-future-of-web-ides.md",
+          "repo": "papa-carlo",
+          "date": "02.05.2014",
+          "description": "Demo webapp of the incremental parser. Thoughts on Web IDEs for programming languages with static typing.",
+          "refs": {
+            "Demo Incremental Parser": "http://lakhin.com/projects/papa-carlo/demo/",
+            "Source code on Github": "https://github.com/Eliah-Lakhin/papa-carlo",
+            "Crosspost on Habrahabr in Russian": "http://habrahabr.ru/post/221213/"
+          }
+        },
+        {
+          "title": "Handy Incremental Parser",
+          "post": "handy-incremental-parser.md",
+          "repo": "papa-carlo",
+          "date": "15.11.2013",
+          "description": "Introduction to Papa Carlo - constructor of incremental parsers written in Scala.",
+          "refs": {
+            "Documentation website": "/projects/papa-carlo/",
+            "Source codes on GitHub": "https://github.com/Eliah-Lakhin/papa-carlo",
+            "Discussion on Reddit": "http://www.reddit.com/r/programming/comments/1rfyzx/whats_wrong_with_the_most_programming_language/",
+            "Incremental parsing approach brief description on Lambda the Ultimate": "http://lambda-the-ultimate.org/node/4840",
+            "Crosspost on Habrahabr in Russian": "http://habrahabr.ru/post/201774/"
+          }
+        },
+        {
+          "title": "Remote job - is not a freelance",
+          "date": "26.10.2013",
+          "refs": {
+            "Article on Habrahabr in Russian": "http://habrahabr.ru/post/199114/"
+          }
+        },
+        {
+          "title": "Functional programming in Java",
+          "date": "28.06.2011",
+          "refs": {
+            "Article on Habrahabr in Russian": "http://habrahabr.ru/post/122919/"
+          }
         }
+      ]
     }
+  }
 }

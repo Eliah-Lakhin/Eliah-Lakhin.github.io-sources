@@ -145,6 +145,14 @@
       "lastUpdate": "15.11.2013",
       "posts": [
         {
+          "title": "Lambda Nsk Speach",
+          "date": "19.05.2015",
+          "refs": {
+            "Screencast": "https://youtu.be/nkYiLchpnys?t=2m55s",
+            "Slides": "http://slides.com/lakhin/promote-fp/"
+          }
+        },
+        {
           "title": "My Speech at Software Freedom Day 2014",
           "date": "21.09.2014",
           "repo": "papa-carlo",

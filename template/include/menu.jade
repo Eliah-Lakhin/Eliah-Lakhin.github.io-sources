@@ -24,6 +24,9 @@ header.navbar.navbar-default.navbar-custom.navbar-static-top.navbar-inverse(role
         .collapse.navbar-collapse#main-menu-body
             ul.nav.navbar-nav.navbar-right
                 mixin item(menu.home, "/", page.menu == "home", "author")
-                mixin item(menu.blog, "/blog/", page.menu == "blog")
+                mixin item(menu.about, "/about/", page.menu == "about")
+                mixin item(menu.portfolio, "/portfolio/", page.menu == "portfolio")
                 mixin item(menu.projects, "/projects/", page.menu == "projects")
+                mixin item(menu.blog, "/blog/", page.menu == "blog")
+                mixin item(menu.contacts, "/contacts/", page.menu == "contacts")
                 mixin item(menu.github, "https://github.com/Eliah-Lakhin/")

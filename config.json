@@ -13,9 +13,12 @@
 
   "menu": {
     "home": "Home",
+    "contacts": "Contacts",
+    "about": "About",
     "github": "GitHub",
     "blog": "Blog",
-    "projects": "Works",
+    "projects": "Research",
+    "portfolio": "Portfolio",
     "toggle": "Toggle navigation"
   },
 
@@ -26,67 +29,24 @@
       "brand": {
         "main": "Ilya Lakhin",
         "url": "/"
-      },
-      "profile": {
-        "Profile": [
-          {
-            "value": "Ilya Lakhin"
-          },
-          {
-            "value": "Software developer"
-          },
-          {
-            "key": "Resume",
-            "value": "Download PDF",
-            "link": "https://dl.dropboxusercontent.com/u/26689230/cv.pdf",
-            "downloadable": true
-          },
-          {
-            "key": "Location",
-            "value": "Novosibirsk, Russia",
-            "link": "http://en.wikipedia.org/wiki/Akademgorodok"
-          },
-          {
-            "key": "Alma mater",
-            "value": "NSU",
-            "link": "http://en.wikipedia.org/wiki/Novosibirsk_State_University"
-          }
-        ],
-        "Network": [
-          {
-            "key": "GitHub",
-            "value": "Eliah-Lakhin",
-            "link": "https://github.com/Eliah-Lakhin"
-          },
-          {
-            "key": "oDesk",
-            "value": "Remote contractor",
-            "link": "https://www.odesk.com/users/~01dbf2ebf18c175658"
-          },
-          {
-            "key": "Twitter",
-            "value": "eliah_lakhin",
-            "link": "https://twitter.com/eliah_lakhin"
-          },
-          {
-            "key": "Google Plus",
-            "value": "Google+",
-            "link": "https://plus.google.com/112384438131335896587",
-            "rel": "me"
-          }
-        ],
-        "Contacts": [
-          {
-            "key": "Email",
-            "value": "eliah.lakhin@gmail.com",
-            "link": "mailto:eliah.lakhin@gmail.com"
-          },
-          {
-            "key": "Skype",
-            "value": "eliah.lakhin",
-            "link": "skype:eliah.lakhin"
-          }
-        ]
+      }
+    },
+
+    "about": {
+      "menu": "about",
+      "title": "Ilya Lakhin",
+      "brand": {
+        "main": "Ilya Lakhin",
+        "url": "/"
+      }
+    },
+
+    "contacts": {
+      "menu": "contacts",
+      "title": "Ilya Lakhin",
+      "brand": {
+        "main": "Ilya Lakhin",
+        "url": "/"
       }
     },
 
@@ -112,12 +72,59 @@
 
     "projects": {
       "menu": "projects",
-      "title": "Ilya Lakhin's works",
+      "title": "Research and OSS projects",
       "brand": {
-        "main": "The list of my works",
+        "main": "Research and OSS projects",
         "url": "/projects/"
       },
-      "description": "Ilya Lakhin's projects and works list"
+      "description": "Ilya Lakhin's research works and OSS projects"
+    },
+
+    "portfolio": {
+      "menu": "portfolio",
+      "title": "Portfolio",
+      "brand": {
+        "main": "The list of my works",
+        "url": "/portfolio/"
+      },
+      "description": "Ilya Lakhin's projects and works list",
+      "works": [
+        {
+          "title": "Recovering Me",
+          "image": "/images/portfolio/recoveringme.jpg",
+          "role": "Lead Developer",
+          "url": "http://recoveringme.com/",
+          "technologies": ["Angular.JS", "Node.JS", "WebRTC"]
+        },
+        {
+          "title": "Skim",
+          "image": "/images/portfolio/skim.jpg",
+          "role": "Senior Developer",
+          "url": "http://skim.com/",
+          "technologies": ["Backbone", "Cordova", "Node.JS"]
+        },
+        {
+          "title": "Kountable",
+          "image": "/images/portfolio/kountable.jpg",
+          "role": "Senior Front-End Developer",
+          "url": "http://kountable.com/",
+          "technologies": ["Angular.JS", "Golang"]
+        },
+        {
+          "title": "Switchboard Online",
+          "image": "/images/portfolio/switchboard.jpg",
+          "role": "PHP and JavaScript Developer",
+          "url": "http://switchboardonline.com/",
+          "technologies": ["JavaScript", "PHP", "Yii"]
+        },
+        {
+          "title": "Valuation Metrics",
+          "image": "/images/portfolio/valuationmetrics.jpg",
+          "role": "Front-end Developer",
+          "url": "http://www.valuationmetricsinc.com/",
+          "technologies": ["JavaScript", "Ruby"]
+        }
+      ]
     },
 
     "project-papa-carlo": {

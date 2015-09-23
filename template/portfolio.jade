@@ -1,0 +1,37 @@
+doctype 5
+html(lang="en")
+    head
+        include include/header
+        include include/analytics.jade
+        link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/css/lightbox.min.css")
+        script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js")
+    body
+        include include/menu
+        include include/mixins
+
+        .container.main-container
+            .row
+                .col-md-offset-1.col-md-10.light-theme
+                    +article("Portfolio")
+                        include ../content/portfolio.md
+                    +article("Featured Works")
+                        each entry, index in page.works
+                            p
+                                .row
+                                    .col-xs-12
+                                        h3: u= entry.title
+                                br
+                                .row
+                                    .col-xs-5
+                                        a.thumbnail(href=entry.url, target="_blank")
+                                            img(src=entry.image, alt=entry.title)
+                                        a(href=entry.url, target="_blank")= entry.url
+                                    .col-xs-7
+                                        strong= entry.role
+                                        br
+                                        p
+                                            ul.list-unstyled
+                                                each technology in entry.technologies
+                                                    li= technology
+
+                                hr

@@ -152,6 +152,15 @@
       "lastUpdate": "15.11.2013",
       "posts": [
         {
+          "title": "Elm - reactive web development",
+          "date": "26.07.2015",
+          "refs": {
+            "Screencast": "http://www.youtube.com/watch?v=88LQXTVBktk",
+            "Slides": "http://slides.com/lakhin/elm/",
+            "Elm-lang Website": "http://elm-lang.org/"
+          }
+        },
+        {
           "title": "Lambda Nsk Speach",
           "date": "19.05.2015",
           "refs": {

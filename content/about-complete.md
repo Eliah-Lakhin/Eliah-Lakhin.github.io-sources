@@ -1,6 +1,6 @@
 ## Ilya Lakhin
 
-![Photo](/images/my-photo5.jpg)
+![Photo](/images/my-photo7.jpg)
 
 #### [Download Complete Résumé in PDF](https://dl.dropboxusercontent.com/u/26689230/cv.pdf)
 

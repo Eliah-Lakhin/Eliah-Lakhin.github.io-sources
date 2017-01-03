@@ -6,63 +6,63 @@
 
 ## Summary
 
-Full Stack Web Engineer and Team Lead.
+Fullstack Senior Web developer.
 
-I have wide experience in web development for more than six years in middle and long-term projects. My primary expertise includes a number of industry-proof technologies such as Node.JS, PHP, Angular.JS, and many other technologies and programming languages related to web development and mobile development based on Web.
+7+ years of experience in remote contracting. 4500+ hours done on Upwork/oDesk.
 
-I also have good skills in distributed systems development based on Amazon Web Services, and experience in
-managing teams of remote developers.
+**Primary expertise**: MEAN.JS, Node.JS, Angular, Mongo.
 
-Looking for remote software development work as a Senior or Team Lead. I can provide you with my personal
-services, or as a Lead of the team of my assistants from Russia.
+I have wide JavaScript development skills and understanding of best practices and development approaches. I can develop and support full-featured web application. I used to work in teams of remote contractors, and I can play a key role in the team. I am very accurate developer who pay much attention at the code quality and client's requirements and deadlines.
 
-## Key Skills
+Previously I worked in PHP, Ruby and Golang-based projects too.
 
+**Front-end**:
+ - Angular.JS
+ - Marionette, Backbone
+ - EcmaScript6
+ - CoffeeScript
+ - Q/Async/Promises/Bluebird/Lodash
+ - Gulp and Grunt
+ - Webpack
+ - Require.JS, Browserify
 
-Programming languages:
+**Specific Web technologies**:
+ - WebRTC / Opentok
+ - Canvas and WebGL
+ - WebSocket / Socket.io
+ - D3.js
 
- * **JavaScript, CoffeeScript and PHP**
+**Back-end**:
+ - Node.JS, Express, HAPI, MEAN.js
+ - PHP, Yii, Symfony2
+ - Ruby on Rails
 
-   _Professional experience in commercial products development worth of over 6 years._
+**Databases**:
+ - MySQL
+ - MongoDB, Mongoose
+ - Redis
+ - ElasticSearch
 
- * **Ruby, Golang, Erlang/OTP**
+**Limited experience in**:
+ - Python
+ - Scala and Java
+ - Golang
+ - Erlang
+ - Cordova
 
-   _Limited experience in development and support._
-
- * **Scala and Java**
-
-   _Personal well-known research OSS projects._
-
-
-Front-end technologies:
-
- * Angular.JS
- * Backbone
- * CoffeeScript
- * Gulp and Grunt
- * Require.JS, Browserify
- * Q/Promises
- * D3.js, SVG graphics
- * Canvas, WebWorkers, WebSockets, WebRTC
- * Cordova
-
-
-Back-end technologies:
- * **Node.JS**: MEANS.JS, Express
- * **PHP**: Yii, Symfony2, CodeIgniter, Doctrine
- * **Amazon Web Services**
- * **Ruby on Rails** _(limited experience)_
-
-Databases:
- * **MySQL**
- * **MongoDB**
- * **Postgres** _(limited experience)_
+**Tools and environments**:
+ - Git/Github
+ - Amazon Web Services
+ - LAMP servers administration
 
 
 ## Employment History
 
 | Timeline | Description |
 |:---------|:------------|
+|Sept 2015 - Dec 2016|**Techsee**, _Remote Contractor, Senior Fullstack Web Develoepr, full-time_|
+|Apr 2016 - Aug 2016|**Crowdskout**, _Remote Contractor, Web Developer, part to full-time_|
+|Oct 2015 - June 2016|**Punch Agency**, _Remote Contractor, Senior Web Developer, part to full-time_|
 |May 2014 - July 2015|**SeeSaw Labs**, _Remote Contractor, Senior Software Engineer, full-time_|
 |March 2014 - March 2015|**Appoxy**, _Remote Contractor, Software Engineer, part to full-time_|
 |Feb 2013 - Sept 2013|**Clevertech**, _Remote Contractor, Team Lead_|

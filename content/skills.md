@@ -1,23 +1,39 @@
-Front-end:
+**Front-end**:
  - Angular.JS
- - Backbone
+ - Marionette, Backbone
+ - EcmaScript6
  - CoffeeScript
+ - Q/Async/Promises/Bluebird/Lodash
  - Gulp and Grunt
+ - Webpack
  - Require.JS, Browserify
- - Q/Promises
 
-Back-end:
- - Node.JS, MEAN.js
+**Specific Web technologies**:
+ - WebRTC / Opentok
+ - Canvas and WebGL
+ - WebSocket / Socket.io
+ - D3.js
+
+**Back-end**:
+ - Node.JS, Express, HAPI, MEAN.js
  - PHP, Yii, Symfony2
-
-Databases:
- - MySQL
- - MongoDB
-
-Limited experience in:
  - Ruby on Rails
- - Postgres
+
+**Databases**:
+ - MySQL
+ - MongoDB, Mongoose
+ - Redis
+ - ElasticSearch
+
+**Limited experience in**:
+ - Python
  - Scala and Java
  - Golang
+ - Erlang
  - Cordova
+
+**Tools and environments**:
+ - Git/Github
  - Amazon Web Services
+ - LAMP servers administration
+ 

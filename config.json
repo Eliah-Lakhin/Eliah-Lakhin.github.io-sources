@@ -88,7 +88,39 @@
         "url": "/portfolio/"
       },
       "description": "Ilya Lakhin's projects and works list",
+      "testimonials": [
+        {
+          "text": "We worked with Ilya over multiple projects and found him a joy to work with. He easily understood everything we threw at him and was able to quickly understand our complex application.",
+          "reference": "George Yates, Crowdskout CTO"
+        },
+        {
+          "text": "Great all around experience working with Eliah. Would definitely enjoy working with him again, and look forward to doing so on future projects.",
+          "reference": "Jeff Winesett, SeeSaw Labs CEO"
+        },
+        {
+          "text": "Ilya did excellent job, very responsive and professional. Highly recommended.",
+          "reference": "Eitan Cohen, Techsee CEO"
+        },
+        {
+          "text": "Outstanding freelancer. Very good communication, great coding style. Will work with him again. Highly recommended",
+          "reference": "Trutz Fries, Amalytix CEO"
+        }
+      ],
       "works": [
+        {
+          "title": "Techsee",
+          "image": "/images/portfolio/techsee.jpg",
+          "role": "Lead Developer",
+          "url": "http://techsee.me/product-call-center/",
+          "technologies": ["Angular.JS", "Node.JS", "EcmaScript 6", "WebRTC", "Mongo", "Redis", "Websocket"]
+        },
+        {
+          "title": "1-Page",
+          "image": "/images/portfolio/1-page.jpg",
+          "role": "Senior Developer",
+          "url": "http://www.1-page.com/",
+          "technologies": ["Angular.JS", "Node.JS", "Mongo", "Elastic Search"]
+        },
         {
           "title": "Recovering Me",
           "image": "/images/portfolio/recoveringme.jpg",
@@ -97,18 +129,25 @@
           "technologies": ["Angular.JS", "Node.JS", "WebRTC"]
         },
         {
-          "title": "Skim",
-          "image": "/images/portfolio/skim.jpg",
-          "role": "Senior Developer",
-          "url": "http://skim.com/",
-          "technologies": ["Backbone", "Cordova", "Node.JS"]
-        },
-        {
           "title": "Kountable",
           "image": "/images/portfolio/kountable.jpg",
           "role": "Senior Front-End Developer",
           "url": "http://kountable.com/",
           "technologies": ["Angular.JS", "Golang"]
+        },
+        {
+          "title": "Crowskout",
+          "image": "/images/portfolio/crowdskout.jpg",
+          "role": "Front-end Developer",
+          "url": "https://crowdskout.com/",
+          "technologies": ["Angular.JS", "PHP"]
+        },
+        {
+          "title": "Skim",
+          "image": "/images/portfolio/skim.jpg",
+          "role": "Senior Developer",
+          "url": "http://skim.com/",
+          "technologies": ["Backbone", "Cordova", "Node.JS"]
         },
         {
           "title": "Switchboard Online",

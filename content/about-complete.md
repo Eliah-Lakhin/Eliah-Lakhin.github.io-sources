@@ -8,7 +8,7 @@
 
 Fullstack Senior Web developer.
 
-7+ years of experience in remote contracting. 4500+ hours done on Upwork/oDesk.
+8+ years of experience in remote contracting. 4500+ hours done on Upwork/oDesk.
 
 **Primary expertise**: MEAN.JS, Node.JS, Angular, Mongo.
 

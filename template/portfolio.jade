@@ -35,3 +35,12 @@ html(lang="en")
                                                     li= technology
 
                                 hr
+                    +article("Testimonials")
+                        each entry, index in page.testimonials
+                            p
+                                .row
+                                    .col-xs-12
+                                        .panel: .panel-body
+                                            div= entry.text
+                                            br
+                                            em= " -- " + entry.reference

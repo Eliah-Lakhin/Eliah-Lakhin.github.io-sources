@@ -1,6 +1,6 @@
 ## Ilya Lakhin
 
-![Photo](/images/my-photo7.jpg)
+![Photo](/images/my-photo8.jpg)
 
 #### [Download Complete Résumé in PDF](https://dl.dropboxusercontent.com/u/26689230/cv.pdf)
 
@@ -60,7 +60,7 @@ Previously I worked in PHP, Ruby and Golang-based projects too.
 
 | Timeline | Description |
 |:---------|:------------|
-|Sept 2015 - Dec 2016|**Techsee**, _Remote Contractor, Senior Fullstack Web Develoepr, full-time_|
+|Sept 2015 - March 2017|**Techsee**, _Remote Contractor, Senior Fullstack Web Develoepr, full-time_|
 |Apr 2016 - Aug 2016|**Crowdskout**, _Remote Contractor, Web Developer, part to full-time_|
 |Oct 2015 - June 2016|**Punch Agency**, _Remote Contractor, Senior Web Developer, part to full-time_|
 |May 2014 - July 2015|**SeeSaw Labs**, _Remote Contractor, Senior Software Engineer, full-time_|

@@ -1,4 +1,4 @@
-![Photo](/images/my-photo6.jpg)
+![Photo](/images/my-photo7.jpg)
 
 My name is Ilya Lakhin, and I am professional web developer from Novosibirsk, Russia.
 

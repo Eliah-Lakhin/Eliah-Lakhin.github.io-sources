@@ -12,8 +12,6 @@ html(lang="en")
         .container.main-container
             .row
                 .col-md-offset-1.col-md-10.light-theme
-                    +article("Portfolio")
-                        include ../content/portfolio.md
                     +article("Featured Works")
                         each entry, index in page.works
                             p

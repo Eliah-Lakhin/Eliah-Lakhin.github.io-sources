@@ -2,13 +2,11 @@
 
 ![Photo](/images/my-photo8.jpg)
 
-#### [Download Complete Résumé in PDF](https://dl.dropboxusercontent.com/u/26689230/cv.pdf)
-
 ## Summary
 
 Fullstack Senior Web developer.
 
-8+ years of experience in remote contracting. 4500+ hours done on Upwork/oDesk.
+12+ years of experience in remote contracting. 4500+ hours done on [Upwork](https://www.upwork.com/users/~01dbf2ebf18c175658).
 
 **Primary expertise**: MEAN.JS, Node.JS, Angular, Mongo.
 

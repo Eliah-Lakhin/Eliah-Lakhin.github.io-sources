@@ -33,6 +33,3 @@ html(lang="en")
                                                 ul
                                                     each ref, caption in entry.refs
                                                         li: a(href= ref, target="_blank")= caption
-
-                    +article("RSS 2.0")
-                        include ../content/rss.md

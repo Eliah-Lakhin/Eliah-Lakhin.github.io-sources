@@ -188,8 +188,15 @@
       "references": "External references",
       "details": "Details",
       "description": "Ilya Lakhin's web logs.",
-      "lastUpdate": "15.11.2013",
+      "lastUpdate": "16.06.2021",
       "posts": [
+        {
+          "title": "Why FOSS is broken",
+          "post": "why-foss-is-broken.md",
+          "date": "16.06.2021",
+          "inEnglish": true,
+          "noDisqus": true
+        },
         {
           "title": "Elm - reactive web development",
           "date": "26.07.2015",

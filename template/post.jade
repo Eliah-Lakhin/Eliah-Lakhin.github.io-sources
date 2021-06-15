@@ -18,6 +18,8 @@ html(lang="en")
                                 include ../content/posts/handy-incremental-parser.md
                             when "the-future-of-web-ides.md"
                                 include ../content/posts/the-future-of-web-ides.md
+                            when "why-foss-is-broken.md"
+                                include ../content/posts/why-foss-is-broken.md
 
                         hr
 
@@ -30,14 +32,15 @@ html(lang="en")
                                         each ref, caption in custom.post.refs
                                             li: a(href= ref, target="_blank")= caption
 
-            br
+            if !custom.post.noDisqus
+                br
 
-            .row
-                .col-md-offset-1.col-md-10.light-theme
-                    br
-                    article: p
-                        include include/disqus
+                .row
+                    .col-md-offset-1.col-md-10.light-theme
+                        br
+                        article: p
+                            include include/disqus
 
-                        +social(common.siteUrl + custom.postUrl,
-                                custom.post.title,
-                                custom.post.repo)
+                            +social(common.siteUrl + custom.postUrl,
+                                    custom.post.title,
+                                    custom.post.repo)
